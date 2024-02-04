@@ -1,14 +1,29 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useWindowSize } from "@uidotdev/usehooks"
 import { FacebookLogo, InstagramLogo, List, X } from "@phosphor-icons/react"
 
 const MainNav = () => {
   const pathname = usePathname()
   const [isNavActive, setIsNavActive] = useState(false)
+  const { width } = useWindowSize()
 
-  const navMenuClasses = isNavActive ? 'before:block before:absolute before:bg-black before:top-0 before:left-0 before:w-full before:h-full' : '' // hidden on 2nd
+  useEffect(() => {
+    if (width >= 1024) {
+      setIsNavActive(true)
+      document.body.classList.remove('overflow-hidden')
+    } else {
+      setIsNavActive(false)
+    }
+  }, [width])
+
+  const navMenuClasses = isNavActive ? 'before:block before:absolute before:bg-black before:top-0 before:right-full before:opacity-40 before:w-full before:h-full lg:before:hidden' : 'hidden'
+  const handleNavClick = () => {
+    setIsNavActive((previousState) => !previousState)
+    document.body.classList.toggle('overflow-hidden')
+  }
 
   const links = [
     {
@@ -47,8 +62,10 @@ const MainNav = () => {
         <nav className="flex justify-between items-center uppercase">
           <Link href="/" className="tracking-wide leading-tight">Northeast<br />Kitchen / Bath</Link>
           <button
-            onClick={() => setIsNavActive(!isNavActive)}
+            onClick={handleNavClick}
             className="lg:hidden"
+            aria-controls="main-nav"
+            aria-expanded={isNavActive}
           >
             {isNavActive
               ?
@@ -58,12 +75,12 @@ const MainNav = () => {
             }
             <span className="sr-only">Toggle main navigation</span>
           </button>
-          <div className={`bg-white flex flex-col pl-4 gap-8 fixed top-24 right-0 w-10/12 h-dvh lg:gap-16 ${navMenuClasses}`}>
-            <ul className="flex flex-col mt-8 lg:gap-4">
+          <div id="main-nav" className={`bg-white flex flex-col pl-4 gap-8 absolute top-full right-0 w-10/12 h-dvh lg:gap-16 lg:static lg:h-auto lg:w-auto lg:flex-row ${navMenuClasses}`}>
+            <ul className="flex flex-col mt-8 lg:mt-0 lg:gap-8 lg:flex-row">
               {links.map((link) => (
                 <li key={link.title}>
                   <Link
-                    className={`py-4 block border-b border-neutral-100 ${pathname === link.href ? 'text-neutral-400' : ''}`}
+                    className={`py-4 block border-b border-neutral-100 lg:border-none lg:p-0 ${pathname === link.href ? 'text-neutral-400' : ''}`}
                     href={link.href}
                   >
                     {link.title}
