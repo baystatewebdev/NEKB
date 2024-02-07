@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import links from "@/helpers/links"
 import { usePathname } from "next/navigation"
 import { useWindowSize } from "@uidotdev/usehooks"
 import { FacebookLogo, InstagramLogo, List, X } from "@phosphor-icons/react"
@@ -25,40 +26,9 @@ const MainNav = () => {
     document.body.classList.toggle('overflow-hidden')
   }
 
-  const links = [
-    {
-      'title': 'Home',
-      'href': '/'
-    },
-    {
-      'title': 'About',
-      'href': '/about'
-    },
-    {
-      'title': 'Services',
-      'href': '/services'
-    },
-    {
-      'title': 'Testimonials',
-      'href': '/testimonials'
-    },
-    {
-      'title': 'Partners',
-      'href': '/partners'
-    },
-    {
-      'title': 'Work',
-      'href': '/work'
-    },
-    {
-      'title': 'Contact',
-      'href': '/contact'
-    },
-  ]
-
   return (
     <div className="border-b border-neutral-100 py-5">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <nav className="flex justify-between items-center uppercase">
           <Link href="/" className="tracking-wide leading-tight">Northeast<br />Kitchen / Bath</Link>
           <button

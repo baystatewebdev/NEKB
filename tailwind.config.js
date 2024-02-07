@@ -8,12 +8,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gray-gradient-r": "linear-gradient(to right, #f5f5f5 33%, #fff 27%)",
+        "gray-gradient-l": "linear-gradient(to left, #f5f5f5 33%, #fff 27%)",
+        "gray-gradient-diagnal": "linear-gradient(38deg, #f5f5f5 35%, #fff 27%)"
       },
       colors: {
         "primary": "#1F5092"
+      },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "7.7rem"
+        }
       }
     },
   },
