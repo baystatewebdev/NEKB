@@ -6,7 +6,8 @@ const Heading = ({ level, levelStyle, className, children }) => {
     h3: 'h3',
     h4: 'h4',
     h5: 'h5',
-    h6: 'h6'
+    h6: 'h6',
+    span: 'span'
   }
 
   const headingLevelStyles = {
@@ -19,13 +20,17 @@ const Heading = ({ level, levelStyle, className, children }) => {
   }
 
   const CustomHeadingElement = headingLevels[level] || 'h1'
-  const headingClasses = headingLevelStyles[levelStyle] || headingLevelStyles[level] || 'h1'
+  let headingClasses = headingLevelStyles[levelStyle] || headingLevelStyles[level] || 'h1'
+  if (level === 'span') {
+    headingClasses += ' block'
+  }
 
   return <CustomHeadingElement className={`${headingClasses} ${className}`}>{children}</CustomHeadingElement>
 }
 
 Heading.defaultProps = {
-  level: 'h1'
+  level: 'h1',
+  className: ''
 }
 
 export default Heading
