@@ -42,7 +42,7 @@ const Testimonials = () => {
           </ul>
         </div>
       </section>
-      <section className="my-24 py-24 bg-neutral-100">
+      <section className="mt-24 py-24 bg-gray-gradient-r">
         <div className="container mx-auto">
           <PreHeading className="text-center lg:text-left">Testimonials</PreHeading>
           <Heading level="h2" className="mb-8 text-center lg:text-left">From Our Clients</Heading>
@@ -76,10 +76,12 @@ const Testimonials = () => {
               </blockquote>
             </li>
           </ul>
-          <div className="flex flex-wrap justify-center items-center pt-20 gap-8 text-center lg:gap-12">
-            <Heading level="h2" levelStyle="h3">Why Wait? Get Started With Your Project Today!</Heading>
-            <LinkButton href="/contact">Start Now</LinkButton>
-          </div>
+        </div>
+      </section>
+      <section className="mb-24 py-24 bg-neutral-100">
+        <div className="flex flex-wrap justify-center items-center gap-8 text-center lg:gap-12">
+          <Heading level="h2" levelStyle="h3">Why Wait? Get Started With Your Project Today!</Heading>
+          <LinkButton href="/contact">Start Now</LinkButton>
         </div>
       </section>
     </main>

@@ -23,7 +23,7 @@ const Services = () => {
     <main className="text-lg">
       <Hero bgImage={heroImg} bgOverlay="dark">
         <div className="container mx-auto">
-          <div className="flex flex-col min-h-[50vh] items-center justify-center text-center text-white">
+          <div className="flex flex-col min-h-[50vh] 2xl:min-h-[35vh] items-center justify-center text-center text-white">
             <Heading className="mb-4">Our Services</Heading>
             <p className="lg:w-8/12 xl:w-6/12">NORTHEAST offers solutions for kitchens and bathrooms in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
           </div>

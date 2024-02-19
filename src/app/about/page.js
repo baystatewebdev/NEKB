@@ -15,7 +15,7 @@ const About = () => {
     <main className="text-lg">
       <Hero bgImage={heroImg} bgOverlay="dark">
         <div className="container mx-auto">
-          <div className="flex flex-col min-h-[50vh] items-center justify-center text-center text-white">
+          <div className="flex flex-col min-h-[50vh] 2xl:min-h-[35vh] items-center justify-center text-center text-white">
             <Heading className="mb-4">About Us</Heading>
             <p>Learn more about NorthEast and our <br />personalized approach to design.</p>
           </div>
