@@ -11,6 +11,7 @@ const MainNav = () => {
   const [isNavActive, setIsNavActive] = useState(false)
   const { width } = useWindowSize()
 
+  // Toggle Nav based on screen size
   useEffect(() => {
     if (width >= 1024) {
       setIsNavActive(true)
@@ -18,7 +19,7 @@ const MainNav = () => {
     } else {
       setIsNavActive(false)
     }
-  }, [width])
+  }, [width, pathname])
 
   const navMenuClasses = isNavActive ? 'before:block before:absolute before:bg-black before:top-0 before:right-full before:opacity-40 before:w-full before:h-full lg:before:hidden' : 'hidden'
   const handleNavClick = () => {

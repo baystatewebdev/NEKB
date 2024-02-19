@@ -1,15 +1,14 @@
 import Image from "next/image"
 
-const Hero = ({ bgImage, bgColor, bgOpacity, children }) => {
+const Hero = ({ bgImage, bgOverlay, children }) => {
 
-  const bgColorClasses = bgColor ? `before:bg-${bgColor}` : ``
-  const bgOpacityClasses = bgOpacity ? `before:bg-opacity-${bgOpacity}` : ``
+  const bgOverlayClass = bgOverlay === 'light' ? 'before:bg-white' : 'before:bg-black'
 
   return (
     <section className="relative">
       {bgImage &&
         <figure
-          className={`absolute top-0 left-0 w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full ${bgColorClasses} ${bgOpacityClasses}`}
+          className={`absolute top-0 left-0 w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full ${bgOverlayClass} before:bg-opacity-50`}
           aria-hidden="true"
         >
           <Image
