@@ -1,5 +1,6 @@
-const PreHeading = ({ children }) => {
-  return <span className="uppercase text-primary inline-block mb-4">{children}</span>
+const PreHeading = ({ className, children }) => {
+  className = className || ''
+  return <span className={`uppercase text-primary block mb-4 ${className}`}>{children}</span>
 }
 
 export default PreHeading
