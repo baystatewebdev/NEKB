@@ -27,7 +27,7 @@ const MainNav = () => {
   }
 
   return (
-    <div className="border-b border-neutral-100 py-5">
+    <div className="border-b border-neutral-100 py-5 relative z-50">
       <div className="container mx-auto">
         <nav className="flex justify-between items-center uppercase">
           <Link href="/" className="tracking-wide leading-tight">Northeast<br />Kitchen / Bath</Link>
