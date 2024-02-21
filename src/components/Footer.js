@@ -1,5 +1,5 @@
 import Link from "next/link"
-import ExternalLink from '@/components/Link'
+import { ExternalLink } from '@/components/Link'
 import links from "@/helpers/links"
 
 const Footer = () => {
@@ -10,15 +10,15 @@ const Footer = () => {
           <div className="grid justify-center gap-8 md:grid-cols-3 md:justify-items-center">
             <div>
               <h3 className="text-xl mb-1">Email</h3>
-              <a href="mailto:tttskb@gmail.com">tttskb@gmail.com</a>
+              <ExternalLink href="mailto:tttskb@gmail.com">tttskb@gmail.com</ExternalLink>
             </div>
             <div>
               <h3 className="text-xl mb-1">Phone</h3>
-              <a href="tel:617-650-8814">(617) 650-8814</a>
+              <ExternalLink href="tel:617-650-8814">(617) 650-8814</ExternalLink>
             </div>
             <div>
               <h3 className="text-xl mb-1">Location</h3>
-              <p>333 Pleasant St, <br />Worcester, MA 01609</p>
+              <ExternalLink href="https://maps.app.goo.gl/FgHCaDDAy4iP1Mez9" target="_blank">333 Pleasant St, <br />Worcester, MA 01609</ExternalLink>
             </div>
           </div>
           <nav>
@@ -35,7 +35,7 @@ const Footer = () => {
               ))}
             </ul>
           </nav>
-          <p className="text-center text-sm">&copy; 2021 NorthEast Kitchen &amp; Bath. Website by <ExternalLink href="https://baystatewebdevelopment.com/" target="_blank">Bay State Web Development</ExternalLink></p>
+          <p className="text-center text-sm">&copy; 2021 NorthEast Kitchen &amp; Bath. Website by <ExternalLink href="https://baystatewebdevelopment.com/" target="_blank" className="font-normal">Bay State Web Development</ExternalLink></p>
         </div>
       </div>
     </footer>

@@ -1,13 +1,10 @@
 import { Quotes } from "@phosphor-icons/react/dist/ssr"
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
-import { LinkButton } from "@/components/Button"
-import Image from "next/image"
-import heroImg from '../../../public/img/hero-img.jpg'
-import kitchenImg from '../../../public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from '../../../public/img/kitchen-remodel.jpg'
-import bathroomImg from '../../../public/img/bathroom-remodel-3.webp'
+import Cta from "@/components/Cta"
 import PreHeading from "@/components/PreHeading"
+
+import heroImg from '../../../public/img/hero-img.jpg'
 
 export const metadata = {
   title: 'Testimonials'
@@ -79,9 +76,8 @@ const Testimonials = () => {
         </div>
       </section>
       <section className="mb-24 py-24 bg-neutral-100">
-        <div className="flex flex-wrap justify-center items-center gap-8 text-center lg:gap-12">
-          <Heading level="h2" levelStyle="h3">Why Wait? Get Started With Your Project Today!</Heading>
-          <LinkButton href="/contact">Start Now</LinkButton>
+        <div className="container mx-auto">
+          <Cta />
         </div>
       </section>
     </main>

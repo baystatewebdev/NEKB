@@ -14,7 +14,7 @@ const ContactForm = () => {
     mode: "onTouched",
   })
   const [isSuccess, setIsSuccess] = useState(false)
-  const [message, setMessage] = useState(false)
+  // const [message, setMessage] = useState(false)
 
   // Please update the Access Key in the .env
   const apiKey = process.env.NEXT_PUBLIC_ACCESS_KEY
@@ -27,12 +27,10 @@ const ContactForm = () => {
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true)
-      setMessage(msg)
       reset()
     },
     onError: (msg, data) => {
       setIsSuccess(false)
-      setMessage(msg)
     },
   })
 
@@ -162,7 +160,7 @@ const ContactForm = () => {
       )}
       {isSubmitSuccessful && !isSuccess && (
         <div className="my-4 text-sm text-center border p-4 border-red-600 text-red-600">
-          {"Something went wrong. Please try again later."}
+          Something went wrong. Please try again later.
         </div>
       )}
     </>

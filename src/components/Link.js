@@ -1,12 +1,24 @@
-const Link = ({ className, children, href, target }) => {
+import NextLink from "next/link"
+
+const commonLinkClasses = 'text-black hover:text-primary font-medium'
+
+export const ExternalLink = ({ className, children, href, target }) => {
   return (
-    <a href={href} className={`text-black hover:text-primary ${className}`} target={target}>{children}</a>
+    <a href={href} className={`${commonLinkClasses} ${className}`} target={target}>{children}</a>
   )
 }
 
-Link.defaultProps = {
+ExternalLink.defaultProps = {
   className: '',
   target: ''
 }
 
-export default Link
+export const InternalLink = ({ className, children, href }) => {
+  return (
+    <NextLink href={href} className={`${commonLinkClasses} ${className}`}>{children}</NextLink>
+  )
+}
+
+InternalLink.defaultProps = {
+  className: ''
+}

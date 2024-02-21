@@ -13,6 +13,7 @@ import bathroomImg3 from '../../../public/img/bathroom-remodel-3.webp'
 import moreImg1 from '../../../public/img/and-more-1.webp'
 import moreImg2 from '../../../public/img/and-more-2.webp'
 import moreImg3 from '../../../public/img/and-more-3.webp'
+import Cta from "@/components/Cta"
 
 export const metadata = {
   title: 'Our Services'
@@ -80,12 +81,9 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section className="bg-neutral-100">
+      <section>
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-center items-center py-16 gap-8 text-center lg:gap-12">
-            <Heading level="h2" levelStyle="h3">Why Wait? Get Started With Your Project Today!</Heading>
-            <LinkButton href="/contact">Start Now</LinkButton>
-          </div>
+          <Cta />
         </div>
       </section>
     </main>
