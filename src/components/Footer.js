@@ -1,4 +1,5 @@
 import Link from "next/link"
+import ExternalLink from '@/components/Link'
 import links from "@/helpers/links"
 
 const Footer = () => {
@@ -34,7 +35,7 @@ const Footer = () => {
               ))}
             </ul>
           </nav>
-          <p className="text-center">&copy; 2021 NorthEast Kitchen / Bath</p>
+          <p className="text-center text-sm">&copy; 2021 NorthEast Kitchen &amp; Bath. Website by <ExternalLink href="https://baystatewebdevelopment.com/" target="_blank">Bay State Web Development</ExternalLink></p>
         </div>
       </div>
     </footer>
