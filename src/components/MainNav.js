@@ -15,16 +15,20 @@ const MainNav = () => {
   useEffect(() => {
     if (width >= 1024) {
       setIsNavActive(true)
-      document.body.classList.remove('overflow-hidden')
     } else {
       setIsNavActive(false)
     }
+    document.body.classList.remove('overflow-hidden')
   }, [width, pathname])
 
   const navMenuClasses = isNavActive ? 'before:block before:absolute before:bg-black before:top-0 before:right-full before:opacity-40 before:w-full before:h-full lg:before:hidden' : 'hidden'
   const handleNavClick = () => {
     setIsNavActive((previousState) => !previousState)
-    document.body.classList.toggle('overflow-hidden')
+    if (document.body.classList.contains('overflow-hidden')) {
+      document.body.classList.remove('overflow-hidden')
+    } else {
+      document.body.classList.add('overflow-hidden')
+    }
   }
 
   return (
