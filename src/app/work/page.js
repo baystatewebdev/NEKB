@@ -1,13 +1,17 @@
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
 import Image from "next/image"
-import heroImg from '../../../public/img/hero-img.jpg'
-import kitchenImg from '../../../public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from '../../../public/img/kitchen-remodel.jpg'
-import bathroomImg from '../../../public/img/bathroom-remodel-3.webp'
 import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
 import Slider from "@/components/Slider"
+
+import heroImg from '../../../public/img/hero-img.jpg'
+import kitchenImg from '../../../public/img/kitchen-remodel-1.jpg'
+import kitchenImg2 from '../../../public/img/kitchen-remodel.jpg'
+import kitchenImg3 from '../../../public/img/asylum/kitchen remodel 1.webp'
+import bathroomImg1 from '../../../public/img/bathroom-remodel-1.webp'
+import bathroomImg2 from '../../../public/img/bathroom-remodel-4.webp'
+import bathroomImg3 from '../../../public/img/bathroom-remodel-3.webp'
 
 export const metadata = {
   title: 'Our Work'
@@ -29,7 +33,7 @@ const Work = () => {
           <div className="grid gap-24 lg:grid-cols-2">
             <div className="order-2 relative lg:order-none">
               <Image src={kitchenImg} className="" alt="kitchen remodel" />
-              <div className="bg-white p-8 absolute bottom-0 right-0">
+              <div className="bg-white p-8 absolute bottom-16 right-0">
                 <Heading level="h3" levelStyle="h5" className="mb-4">Solutions for Any Need:</Heading>
                 <ul className="list-disc pl-8">
                   <li>Kitchens</li>
@@ -45,8 +49,8 @@ const Work = () => {
               <Slider>
                 <Image src={kitchenImg} className="h-96 w-full object-cover" alt="kitchen remodel" />
                 <Image src={kitchenImg2} className="h-96 w-full object-cover" alt="kitchen remodel" />
-                <Image src={bathroomImg} className="h-96 w-full object-cover" alt="kitchen remodel" />
-                <Image src={bathroomImg} className="h-96 w-full object-cover" alt="kitchen remodel" />
+                <Image src={bathroomImg1} className="h-96 w-full object-cover" alt="kitchen remodel" />
+                <Image src={bathroomImg3} className="h-96 w-full object-cover" alt="kitchen remodel" />
               </Slider>
             </div>
           </div>
@@ -64,16 +68,16 @@ const Work = () => {
               <Image src={kitchenImg2} className="w-full h-full object-cover" alt="kitchen remodel" />
             </li>
             <li>
-              <Image src={bathroomImg} className="w-full h-full object-cover" alt="kitchen remodel" />
+              <Image src={kitchenImg3} className="w-full h-full object-cover" alt="kitchen remodel" />
             </li>
             <li>
-              <Image src={bathroomImg} className="w-full h-full object-cover" alt="kitchen remodel" />
+              <Image src={bathroomImg1} className="w-full h-full object-cover" alt="kitchen remodel" />
             </li>
             <li>
-              <Image src={kitchenImg} className="w-full h-full object-cover" alt="kitchen remodel" />
+              <Image src={bathroomImg2} className="w-full h-full object-cover" alt="kitchen remodel" />
             </li>
             <li>
-              <Image src={kitchenImg2} className="w-full h-full object-cover" alt="kitchen remodel" />
+              <Image src={bathroomImg3} className="w-full h-full object-cover" alt="kitchen remodel" />
             </li>
           </ul>
         </div>

@@ -1,43 +1,29 @@
 "use client"
 import useEmblaCarousel from 'embla-carousel-react'
-import { useState, useCallback, useEffect, Children } from "react"
+import { useState, useCallback, useEffect, useRef, Children } from "react"
 import { CaretRight, CaretLeft, DotOutline } from '@phosphor-icons/react'
 
 const Slider = ({ children }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
   const [currentSlide, setCurrentSlide] = useState(0)
+  const sliderControlsRef = useRef()
   const childrenCount = Children.count(children)
-
-  const handleScrollSlideChange = useCallback((offset) => {
-    setCurrentSlide((prevSlide) => {
-      const nextSlide = prevSlide + offset
-      if (nextSlide >= childrenCount) {
-        return 0
-      } else if (nextSlide < 0) {
-        return childrenCount - 1
-      }
-      return nextSlide
-    })
-  }, [childrenCount])
 
   const scrollPrevious = useCallback(() => {
     if (emblaApi) {
       emblaApi.scrollPrev()
-      handleScrollSlideChange(-1)
     }
-  }, [emblaApi, handleScrollSlideChange])
+  }, [emblaApi])
 
   const scrollNext = useCallback(() => {
     if (emblaApi) {
       emblaApi.scrollNext()
-      handleScrollSlideChange(1)
     }
-  }, [emblaApi, handleScrollSlideChange])
+  }, [emblaApi])
 
   const handleButtonClick = (index) => {
     if (emblaApi) {
       emblaApi.scrollTo(index)
-      setCurrentSlide(index)
     }
   }
 
@@ -49,16 +35,30 @@ const Slider = ({ children }) => {
     }
   }, [scrollNext, scrollPrevious])
 
+  const handleSlideChange = useCallback(() => {
+    if (emblaApi) {
+      setCurrentSlide(emblaApi.selectedScrollSnap())
+    }
+  }, [emblaApi])
+
   useEffect(() => {
-    document.addEventListener('keyup', handleKeyboardPress)
+    const controlsRef = sliderControlsRef.current
+    controlsRef.addEventListener('keyup', handleKeyboardPress)
+
+    if (emblaApi) {
+      emblaApi.on('select', handleSlideChange)
+    }
 
     return () => {
-      document.removeEventListener('keyup', handleKeyboardPress)
+      controlsRef.removeEventListener('keyup', handleKeyboardPress)
+      if (emblaApi) {
+        emblaApi.off('select', handleSlideChange)
+      }
     }
-  }, [handleKeyboardPress])
+  }, [emblaApi, handleKeyboardPress, handleSlideChange])
 
   return (
-    <div className="relative" onKeyUp={handleKeyboardPress}>
+    <div className="relative">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex items-end">
           {Children.map(children, (child, index) =>
@@ -68,7 +68,7 @@ const Slider = ({ children }) => {
           )}
         </div>
       </div>
-      <div className='flex justify-center items-center gap-4 w-full p-4 text-gray-600'>
+      <div className='flex justify-center items-center gap-4 w-full p-4 text-gray-600' ref={sliderControlsRef}>
         <button onClick={scrollPrevious}>
           <CaretLeft size="2rem" />
           <span className='sr-only'>Scroll to previous slide</span>

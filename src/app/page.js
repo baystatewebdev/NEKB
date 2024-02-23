@@ -130,27 +130,23 @@ export default function Home() {
               </li>
               <li className="flex flex-col gap-4 items-center lg:items-start">
                 <span className="block text-neutral-600">01</span>
-                <h3 className="uppercase text-xl">Pre-Design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <Link href="/" className="uppercase inline-block text-sm px-4 py-1 mt-2 border-2 border-black rounded transition hover:bg-black hover:text-white">Explore</Link>
+                <h3 className="uppercase text-xl">Initial Consultation</h3>
+                <p>Discuss your vision, budget, and requirements for the remodel, ensuring a clear understanding of your goals. </p>
               </li>
               <li className="flex flex-col gap-4 items-center lg:items-start">
                 <span className="block text-neutral-600">02</span>
-                <h3 className="uppercase text-xl">Development</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <Link href="/" className="uppercase inline-block text-sm px-4 py-1 mt-2 border-2 border-black rounded transition hover:bg-black hover:text-white">Explore</Link>
+                <h3 className="uppercase text-xl">Design &amp; Planning</h3>
+                <p>Develop comprehensive design plans, including layout options, material selections, and project timelines. </p>
               </li>
               <li className="flex flex-col gap-4 items-center lg:items-start">
                 <span className="block text-neutral-600">03</span>
-                <h3 className="uppercase text-xl">Documentation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <Link href="/" className="uppercase inline-block text-sm px-4 py-1 mt-2 border-2 border-black rounded transition hover:bg-black hover:text-white">Explore</Link>
+                <h3 className="uppercase text-xl">Execution &amp; Construction</h3>
+                <p>Begin the construction process, while maintaining open communication with the throughout the renovation. </p>
               </li>
               <li className="flex flex-col gap-4 items-center lg:items-start">
                 <span className="block text-neutral-600">04</span>
-                <h3 className="uppercase text-xl">Excecution</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <Link href="/" className="uppercase inline-block text-sm px-4 py-1 mt-2 border-2 border-black rounded transition hover:bg-black hover:text-white">Explore</Link>
+                <h3 className="uppercase text-xl">Completion &amp; Final Inspection</h3>
+                <p>Conduct a thorough inspection to ensure your satisfaction, addressing any final touch-ups or adjustments as needed. </p>
               </li>
               <li className="md:col-span-2">
                 <Image
