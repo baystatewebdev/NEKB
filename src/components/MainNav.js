@@ -4,6 +4,7 @@ import Link from "next/link"
 import links from "@/helpers/links"
 import { usePathname } from "next/navigation"
 import { useWindowSize } from "@uidotdev/usehooks"
+import MenuItem from "./MenuItem"
 import { FacebookLogo, InstagramLogo, List, X } from "@phosphor-icons/react"
 
 const MainNav = () => {
@@ -53,14 +54,7 @@ const MainNav = () => {
           <div id="main-nav" className={`bg-white flex flex-col pl-4 gap-8 absolute top-full right-0 w-10/12 h-dvh lg:gap-16 lg:static lg:h-auto lg:w-auto lg:flex-row ${navMenuClasses}`}>
             <ul className="flex flex-col mt-8 lg:mt-0 lg:gap-8 lg:flex-row">
               {links.map((link) => (
-                <li key={link.title}>
-                  <Link
-                    className={`py-4 block border-b border-neutral-100 lg:border-none lg:p-0 ${pathname === link.href ? 'text-neutral-400' : ''}`}
-                    href={link.href}
-                  >
-                    {link.title}
-                  </Link>
-                </li>
+                <MenuItem key={link.title} link={link} />
               ))}
             </ul>
             <ul className="flex flex-wrap gap-4">

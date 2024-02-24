@@ -1,31 +1,37 @@
 const links = [
   {
-    'title': 'Home',
-    'href': '/'
+    title: 'About',
+    href: '/about'
   },
   {
-    'title': 'About',
-    'href': '/about'
+    title: 'Services',
+    href: '/services',
+    subPages: [
+      {
+        title: 'Kitchen Remodeling',
+        href: '/services/kitchen-remodeling'
+      },
+      {
+        title: 'Bathroom Remodeling',
+        href: '/sercies/bathroom-remodeling'
+      }
+    ]
   },
   {
-    'title': 'Services',
-    'href': '/services'
+    title: 'Testimonials',
+    href: '/testimonials'
   },
   {
-    'title': 'Testimonials',
-    'href': '/testimonials'
+    title: 'Partners',
+    href: '/partners'
   },
   {
-    'title': 'Partners',
-    'href': '/partners'
+    title: 'Work',
+    href: '/work'
   },
   {
-    'title': 'Work',
-    'href': '/work'
-  },
-  {
-    'title': 'Contact',
-    'href': '/contact'
+    title: 'Contact',
+    href: '/contact'
   },
 ]
 
