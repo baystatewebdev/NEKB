@@ -45,7 +45,7 @@ const MenuItem = ({ link, className = '' }) => {
             {isSubMenuOpen ? <CaretUp size="1.5rem" /> : <CaretDown size="1.5rem" />}
           </button>
         </div>
-        <ul className={`pl-4 bg-white flex flex-col gap-4 lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2 lg:w-max lg:shadow-md lg:p-4 ${isSubMenuOpen ? '' : 'hidden'}`}>
+        <ul className={`pl-4 bg-white flex flex-col lg:gap-4 lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2 lg:w-max lg:shadow-md lg:p-4 ${isSubMenuOpen ? '' : 'hidden'}`}>
           {subPages.map((subPage) => (
             <MenuItem link={subPage} key={subPage.title} />
           ))}

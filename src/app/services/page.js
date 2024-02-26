@@ -35,7 +35,8 @@ const Services = () => {
           <div className="grid lg:grid-cols-5 items-center gap-24">
             <div className="text-center lg:text-left lg:col-span-2">
               <Heading level="h2" className="mb-4">Kitchens</Heading>
-              <p>The kitchen is the heart of any home. And good times with family and friends call for a setting that is both functional and stylish. Whatever it takes to make this room better, NORTHEAST is committed to doing: total or partial remodeling with cabinets and countertops.</p>
+              <p className="mb-4">The kitchen is the heart of any home. And good times with family and friends call for a setting that is both functional and stylish. Whatever it takes to make this room better, NORTHEAST is committed to doing: total or partial remodeling with cabinets and countertops.</p>
+              <LinkButton href="/services/kitchen-remodeling" className="text-base">Learn More</LinkButton>
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">

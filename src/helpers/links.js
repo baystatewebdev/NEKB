@@ -14,6 +14,10 @@ const links = [
       {
         title: 'Bathroom Remodeling',
         href: '/sercies/bathroom-remodeling'
+      },
+      {
+        title: 'Other Services',
+        href: '/sercies/other-services'
       }
     ]
   },
