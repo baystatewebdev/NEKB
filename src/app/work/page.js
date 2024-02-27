@@ -4,6 +4,7 @@ import Image from "next/image"
 import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
 import Slider from "@/components/Slider"
+import Modal from "@/components/Modal"
 
 import heroImg from '../../../public/img/hero-img.jpg'
 import kitchenImg from '../../../public/img/kitchen-remodel-1.jpg'
@@ -12,6 +13,7 @@ import kitchenImg3 from '../../../public/img/asylum/kitchen remodel 1.webp'
 import bathroomImg1 from '../../../public/img/bathroom-remodel-1.webp'
 import bathroomImg2 from '../../../public/img/bathroom-remodel-4.webp'
 import bathroomImg3 from '../../../public/img/bathroom-remodel-3.webp'
+import ModalSlider from "@/components/ModalSlider"
 
 export const metadata = {
   title: 'Our Work'
@@ -46,12 +48,12 @@ const Work = () => {
               <PreHeading>10 Years of Experience</PreHeading>
               <Heading level="h2" className="mb-4">Turn Your Vision Into Reality</Heading>
               <p className="text-neutral-600 mb-8">Our qualified professionals understand what you want, what you are looking for, and plan environments that incorporate all the comfort and elegance your home deserves.</p>
-              <Slider>
-                <Image src={kitchenImg} className="h-96 w-full object-cover" alt="kitchen remodel" />
-                <Image src={kitchenImg2} className="h-96 w-full object-cover" alt="kitchen remodel" />
-                <Image src={bathroomImg1} className="h-96 w-full object-cover" alt="kitchen remodel" />
-                <Image src={bathroomImg3} className="h-96 w-full object-cover" alt="kitchen remodel" />
-              </Slider>
+              <ModalSlider>
+                <Image src={kitchenImg} className="h-full object-contain" alt="kitchen remodel" />
+                <Image src={kitchenImg2} className="h-full object-contain" alt="kitchen remodel" />
+                <Image src={bathroomImg1} className="h-full object-contain" alt="kitchen remodel" />
+                <Image src={bathroomImg3} className="h-full object-contain" alt="kitchen remodel" />
+              </ModalSlider>
             </div>
           </div>
         </div>

@@ -3,9 +3,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { useState, useCallback, useEffect, useRef, Children } from "react"
 import { CaretRight, CaretLeft, DotOutline } from '@phosphor-icons/react'
 
-const Slider = ({ children }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
-  const [currentSlide, setCurrentSlide] = useState(0)
+const Slider = ({ children, slideHeight = 550, emblaOptions = {}, updateCurrentSlide }) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, ...emblaOptions })
+  const [currentSlide, setCurrentSlide] = useState(emblaOptions.startIndex || 0)
   const sliderControlsRef = useRef()
   const childrenCount = Children.count(children)
 
@@ -37,9 +37,13 @@ const Slider = ({ children }) => {
 
   const handleSlideChange = useCallback(() => {
     if (emblaApi) {
-      setCurrentSlide(emblaApi.selectedScrollSnap())
+      const newSlideIndex = emblaApi.selectedScrollSnap()
+      setCurrentSlide(newSlideIndex)
+      if (updateCurrentSlide) {
+        updateCurrentSlide(newSlideIndex)
+      }
     }
-  }, [emblaApi])
+  }, [emblaApi, updateCurrentSlide])
 
   useEffect(() => {
     const controlsRef = sliderControlsRef.current
@@ -62,7 +66,7 @@ const Slider = ({ children }) => {
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex items-end">
           {Children.map(children, (child, index) =>
-            <div className="grow-0 shrink-0 basis-full min-w-0" key={index}>
+            <div className="grow-0 shrink-0 basis-full min-w-0" key={index} style={{ height: slideHeight }}>
               {child}
             </div>
           )}
