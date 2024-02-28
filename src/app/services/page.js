@@ -26,7 +26,7 @@ const Services = () => {
         <div className="container mx-auto">
           <div className="flex flex-col min-h-[50vh] 2xl:min-h-[35vh] items-center justify-center text-center text-white">
             <Heading className="mb-4">Our Services</Heading>
-            <p className="lg:w-8/12 xl:w-6/12">NORTHEAST offers solutions for kitchens and bathrooms in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
+            <p className="lg:w-8/12 xl:w-6/12 text-balance">NORTHEAST offers solutions for kitchens and bathrooms in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
           </div>
         </div>
       </Hero>
@@ -60,7 +60,8 @@ const Services = () => {
             </div>
             <div className="text-center order-1 lg:order-none lg:text-left lg:col-span-2">
               <Heading level="h2" className="mb-4">Bathrooms</Heading>
-              <p>Functional and relaxing. Bathrooms should be a harmonious blend of practicality, sophistication, and exceptional materials. NORTHEAST has qualified professionals who can make your dream project come to life and guarantee your satisfaction.</p>
+              <p className="mb-4">Functional and relaxing. Bathrooms should be a harmonious blend of practicality, sophistication, and exceptional materials. NORTHEAST has qualified professionals who can make your dream project come to life and guarantee your satisfaction.</p>
+              <LinkButton href="/services/bathroom-remodeling" className="text-base">Learn More</LinkButton>
             </div>
           </div>
         </div>
@@ -70,7 +71,8 @@ const Services = () => {
           <div className="grid lg:grid-cols-5 items-center gap-24">
             <div className="text-center lg:text-left lg:col-span-2">
               <Heading level="h2" className="mb-4">And More...</Heading>
-              <p>NORTHEAST has ideal solutions to make every room in your home both sophisticated and cozy. We do more than turn out products in each project – we deliver personalized solutions with an exclusive design and quality assurance.</p>
+              <p className="mb-4">NORTHEAST has ideal solutions to make every room in your home both sophisticated and cozy. We do more than turn out products in each project – we deliver personalized solutions with an exclusive design and quality assurance.</p>
+              <LinkButton href="/services/other-services" className="text-base">Learn More</LinkButton>
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">

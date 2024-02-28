@@ -25,7 +25,7 @@ const Heading = ({ level, levelStyle, className, children }) => {
     headingClasses += ' block'
   }
 
-  return <CustomHeadingElement className={`${headingClasses} ${className}`}>{children}</CustomHeadingElement>
+  return <CustomHeadingElement className={`text-balance ${headingClasses} ${className}`}>{children}</CustomHeadingElement>
 }
 
 Heading.defaultProps = {

@@ -18,7 +18,7 @@ const Partners = () => {
         <div className="container mx-auto">
           <div className="flex flex-col min-h-[50vh] 2xl:min-h-[35vh] items-center justify-center text-center text-white">
             <Heading className="mb-4">Our Partners</Heading>
-            <p className="lg:w-8/12 xl:w-6/12">Northeast has excellent partners to help us fulfill our commitment to offering quality furniture. </p>
+            <p className="lg:w-8/12 xl:w-6/12 text-balance">Northeast has excellent partners to help us fulfill our commitment to offering quality furniture.</p>
           </div>
         </div>
       </Hero>

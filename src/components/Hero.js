@@ -8,7 +8,7 @@ const Hero = ({ bgImage, bgOverlay, children }) => {
     <section className="relative">
       {bgImage &&
         <figure
-          className={`absolute top-0 left-0 w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full ${bgOverlayClass} before:bg-opacity-50`}
+          className={`absolute top-0 left-0 w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full ${bgOverlayClass} before:bg-opacity-60`}
           aria-hidden="true"
         >
           <Image

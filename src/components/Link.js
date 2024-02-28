@@ -1,6 +1,6 @@
 import NextLink from "next/link"
 
-const commonLinkClasses = 'text-black hover:text-primary font-medium'
+const commonLinkClasses = 'text-black hover:text-primary font-medium transition-colors'
 
 export const ExternalLink = ({ className = '', children, href, target = '' }) => {
   return (

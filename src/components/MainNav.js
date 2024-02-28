@@ -52,7 +52,7 @@ const MainNav = () => {
             <span className="sr-only">Toggle main navigation</span>
           </button>
           <div id="main-nav" className={`bg-white flex flex-col pl-4 gap-8 absolute top-full right-0 w-10/12 h-dvh lg:gap-16 lg:static lg:h-auto lg:w-auto lg:flex-row ${navMenuClasses}`}>
-            <ul className="flex flex-col mt-8 lg:text-center lg:mt-0 lg:gap-8 lg:flex-row">
+            <ul className="flex flex-col mt-8 lg:text-sm lg:mt-0 lg:gap-8 lg:flex-row">
               {links.map((link) => (
                 <MenuItem key={link.title} link={link} />
               ))}
