@@ -3,11 +3,14 @@ import Link from "next/link";
 import { InternalLink } from "@/components/Link";
 import { LinkButton } from "@/components/Button"
 import Card from "@/components/Card"
-import heroImg from '../../public/img/hero-img.jpg'
-import kitchenRemodelImg from '../../public/img/kitchen-remodel.jpg'
-import bathroomRemodelImg from '../../public/img/bathroom-remodel.jpg'
 import Cta from "@/components/Cta";
 import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
+
+import heroImg from 'public/img/hero-img.jpg'
+import kitchenRemodelImg from 'public/img/kitchen-remodel.jpg'
+import bathroomRemodelImg from 'public/img/bathroom-remodel.jpg'
+import andMoreImg from 'public/img/and-more-1.webp'
+import andMoreImg2 from 'public/img/and-more-3.webp'
 
 export const metadata = {
   title: 'Kitchen & Bath Remodeling Solutions | NorthEast'
@@ -87,15 +90,15 @@ export default function Home() {
               <div className="text-center lg:text-left">
                 <span className="uppercase text-primary inline-block mb-4">Our Services</span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 ">Consultations & Services</h2>
-                <p className="text-neutral-600 mb-4">Embark on your renovation journey with confidence and a <InternalLink href="/contact">free consultation</InternalLink>. Whether you're dreaming of a revitalized kitchen, a serene bathroom retreat, or transforming another space, NorthEast is here to guide you every step of the way.</p>
+                <p className="text-neutral-600 mb-4">Embark on your renovation journey with confidence and a <InternalLink href="/contact">free consultation</InternalLink>. Whether you&apos;re dreaming of a revitalized kitchen, a serene bathroom retreat, or transforming another space, NorthEast is here to guide you every step of the way.</p>
                 <InternalLink href="/services" className="inline-flex items-center gap-2 uppercase text-sm group">Learn More <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" /></InternalLink>
               </div>
               <ul className="flex flex-col gap-8">
                 <Card type="li">
                   <Image
-                    src={bathroomRemodelImg}
+                    src={andMoreImg}
                     alt="photo of a beautiful and modern remodeled bathroom"
-                    className="w-24 h-24 object-cover rounded-full"
+                    className="w-24 h-24 object-cover rounded-full flex-none"
                   />
                   <div className="text-center lg:text-left">
                     <h3 className="mb-1 text-2xl">Our Solutions</h3>
@@ -104,9 +107,9 @@ export default function Home() {
                 </Card>
                 <Card type="li">
                   <Image
-                    src={bathroomRemodelImg}
+                    src={andMoreImg2}
                     alt="photo of a beautiful and modern remodeled bathroom"
-                    className="w-24 h-24 object-cover rounded-full"
+                    className="w-24 h-24 object-cover rounded-full flex-none"
                   />
                   <div className="text-center lg:text-left">
                     <h3 className="mb-1 text-2xl">And More...</h3>
@@ -122,8 +125,8 @@ export default function Home() {
         <div className="py-16 bg-gray-gradient-r lg:py-32">
           <div className="container mx-auto relative z-10">
             <div className="text-center lg:text-left">
-              <span className="uppercase text-primary inline-block mb-4">Our Process</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-16 ">How It&apos;s Done</h2>
+              <span className="uppercase text-primary inline-block mb-4">How It&apos;s Done</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl mb-16 ">Our Process</h2>
             </div>
             <ul className="grid items-center gap-12 text-center md:grid-cols-2 lg:grid-cols-4 lg:text-left">
               <li className="md:col-span-2">

@@ -6,13 +6,13 @@ import { LinkButton } from "@/components/Button"
 import Slider from "@/components/Slider"
 import Modal from "@/components/Modal"
 
-import heroImg from '../../../public/img/hero-img.jpg'
-import kitchenImg from '../../../public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from '../../../public/img/kitchen-remodel.jpg'
-import kitchenImg3 from '../../../public/img/asylum/kitchen remodel 1.webp'
-import bathroomImg1 from '../../../public/img/bathroom-remodel-1.webp'
-import bathroomImg2 from '../../../public/img/bathroom-remodel-4.webp'
-import bathroomImg3 from '../../../public/img/bathroom-remodel-3.webp'
+import heroImg from 'public/img/hero-img.jpg'
+import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
+import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
+import kitchenImg3 from 'public/img/asylum/kitchen remodel 1.webp'
+import bathroomImg1 from 'public/img/bathroom-remodel-1.webp'
+import bathroomImg2 from 'public/img/bathroom-remodel-4.webp'
+import bathroomImg3 from 'public/img/bathroom-remodel-3.webp'
 import ModalSlider from "@/components/ModalSlider"
 
 export const metadata = {

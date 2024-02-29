@@ -4,7 +4,7 @@ import Heading from "@/components/Heading"
 import Cta from "@/components/Cta"
 import PreHeading from "@/components/PreHeading"
 
-import heroImg from '../../../public/img/hero-img.jpg'
+import heroImg from 'public/img/hero-img.jpg'
 
 export const metadata = {
   title: 'Testimonials'

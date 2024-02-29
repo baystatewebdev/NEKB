@@ -1,8 +1,7 @@
-import cubitacLogo from '../../public/img/cubitac-logo.webp'
-import diamondLogo from '../../public/img/diamond-logo.webp'
-import mantraLogo from '../../public/img/mantra-logo.webp'
-import omegaLogo from '../../public/img/omega-logo.webp'
-import wolfLogo from '../../public/img/wolf-logo.webp'
+import cubitacLogo from 'public/img/cubitac-logo.webp'
+import diamondLogo from 'public/img/diamond-logo.webp'
+import mantraLogo from 'public/img/mantra-logo.webp'
+import wolfLogo from 'public/img/wolf-logo.webp'
 
 const partners = [
   {
@@ -22,12 +21,6 @@ const partners = [
     href: 'https://www.mantracabinets.com/',
     logo: mantraLogo,
     name: 'Mantra Cabinets'
-  },
-  {
-    description: "Omega, home to custom cabinet builders, was born in a barn in Washburn Iowa, over thirty years ago — really and truly. We've continued to grow through our craftsmen and women — true artisans in their trade, creating beautiful rooms of furniture-quality cabinetry. We start with raw lumber, in boardfoot format in our rough mill, and end our journey in beautiful homes across the United States and Canada.",
-    href: 'https://www.omegacabinetry.com/',
-    logo: omegaLogo,
-    name: 'Omega Cabinetry'
   },
   {
     description: "Wolf Home Products was founded in 1843 as a single store selling dry goods and lumber on the banks of Pennsylvania’s Susquehanna River. During the first half of the 1900s, the company expanded into a mid-Atlantic wholesale and retail lumber operation with 30 locations.",

@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="grid justify-center gap-8 md:grid-cols-3 md:justify-items-center">
             <div>
               <h3 className="text-xl mb-1">Email</h3>
-              <ExternalLink href="mailto:tttskb@gmail.com">tttskb@gmail.com</ExternalLink>
+              <ExternalLink href="mailto:thais@northeastkitchenbath.com">thais@northeastkitchenbath.com</ExternalLink>
             </div>
             <div>
               <h3 className="text-xl mb-1">Phone</h3>
@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="text-xl mb-1">Location</h3>
-              <ExternalLink href="https://maps.app.goo.gl/FgHCaDDAy4iP1Mez9" target="_blank">333 Pleasant St, <br />Worcester, MA 01609</ExternalLink>
+              <ExternalLink href="https://maps.app.goo.gl/FgHCaDDAy4iP1Mez9" target="_blank">516 Boston Turnpike, <br />Shrewsbury, MA 01545</ExternalLink>
             </div>
           </div>
           <nav>

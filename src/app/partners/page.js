@@ -5,7 +5,7 @@ import Heading from "@/components/Heading"
 import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
 import partners from "@/helpers/partners"
-import heroImg from '../../../public/img/hero-img.jpg'
+import heroImg from 'public/img/hero-img.jpg'
 
 export const metadata = {
   title: 'Our Partner Brands'

@@ -3,16 +3,16 @@ import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
 import { LinkButton } from "@/components/Button"
 
-import heroImg from '../../../public/img/hero-img.jpg'
-import kitchenImg1 from '../../../public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from '../../../public/img/kitchen-remodel-2.jpg'
-import kitchenImg3 from '../../../public/img/kitchen-remodel-3.jpg'
-import bathroomImg1 from '../../../public/img/bathroom-remodel-1.webp'
-import bathroomImg2 from '../../../public/img/bathroom-remodel-2.webp'
-import bathroomImg3 from '../../../public/img/bathroom-remodel-3.webp'
-import moreImg1 from '../../../public/img/and-more-1.webp'
-import moreImg2 from '../../../public/img/and-more-2.webp'
-import moreImg3 from '../../../public/img/and-more-3.webp'
+import heroImg from 'public/img/hero-img.jpg'
+import kitchenImg1 from 'public/img/kitchen-remodel-1.jpg'
+import kitchenImg2 from 'public/img/kitchen-remodel-2.jpg'
+import kitchenImg3 from 'public/img/kitchen-remodel-3.jpg'
+import bathroomImg1 from 'public/img/bathroom-remodel-1.webp'
+import bathroomImg2 from 'public/img/bathroom-remodel-2.webp'
+import bathroomImg3 from 'public/img/bathroom-remodel-3.webp'
+import moreImg1 from 'public/img/and-more-1.webp'
+import moreImg2 from 'public/img/and-more-2.webp'
+import moreImg3 from 'public/img/and-more-3.webp'
 import Cta from "@/components/Cta"
 
 export const metadata = {

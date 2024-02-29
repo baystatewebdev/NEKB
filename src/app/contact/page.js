@@ -1,10 +1,10 @@
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
 import Image from "next/image"
-import heroImg from '../../../public/img/hero-img.jpg'
-import kitchenImg from '../../../public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from '../../../public/img/kitchen-remodel.jpg'
-import bathroomImg from '../../../public/img/bathroom-remodel-3.webp'
+import heroImg from 'public/img/hero-img.jpg'
+import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
+import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
+import bathroomImg from 'public/img/bathroom-remodel-3.webp'
 import PreHeading from "@/components/PreHeading"
 import { ExternalLink } from "@/components/Link"
 import { Phone, Envelope, MapTrifold } from "@phosphor-icons/react/dist/ssr"
@@ -39,7 +39,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <Heading level="h3" className="mb-2">Email</Heading>
-                    <ExternalLink href="mailto:tttskb@gmail.com">tttskb@gmail.com</ExternalLink>
+                    <ExternalLink href="mailto:thais@northeastkitchenbath.com">thais@northeastkitchenbath.com</ExternalLink>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -57,7 +57,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <Heading level="h3" className="mb-2">Location</Heading>
-                    <ExternalLink href="https://maps.app.goo.gl/FgHCaDDAy4iP1Mez9" target="_blank">333 Pleasant St, <br />Worcester, MA 01609</ExternalLink>
+                    <ExternalLink href="https://maps.app.goo.gl/FgHCaDDAy4iP1Mez9" target="_blank">516 Boston Turnpike,<br />Shrewsbury, MA 01545</ExternalLink>
                   </div>
                 </li>
               </ul>
