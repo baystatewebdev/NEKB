@@ -35,7 +35,7 @@ const Page = () => {
           <div className="grid lg:grid-cols-5 items-center gap-24">
             <div className="text-center lg:text-left lg:col-span-2">
               <Heading level="h2" className="mb-4">Other Custom Services</Heading>
-              <p className="mb-4">We specialize in providing tailored custom remodel and renovation services to meet the unique needs and preferences of our clients. Whether it's a kitchen renovation to accommodate a growing family, adding built-ins to a living space, or a complete room makeover, our experienced team is dedicated to exceeding expectations at every step of the process. From initial design consultations to the final touches, we collaborate closely with you to ensure that your vision is realized down to the smallest details. With NorthEast, you can trust that your project will be executed flawlessly, creating a house that truly feels like home.</p>
+              <p className="mb-4">We specialize in providing tailored custom remodel and renovation services to meet the unique needs and preferences of our clients. Whether it&apos;s a kitchen renovation to accommodate a growing family, adding built-ins to a living space, or a complete room makeover, our experienced team is dedicated to exceeding expectations at every step of the process. From initial design consultations to the final touches, we collaborate closely with you to ensure that your vision is realized down to the smallest details. With NorthEast, you can trust that your project will be executed flawlessly, creating a house that truly feels like home.</p>
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">
@@ -116,7 +116,7 @@ const Page = () => {
                   <p>We specialize in a wide range of home renovation projects, including kitchen and bathroom remodels, basement finishing, room additions, and other renovations. Whether you&apos;re looking to update a single area or transform your entire home, our team has the expertise and resources to bring your vision to life.</p>
                 </Dropdown>
                 <Dropdown title="Are your renovation services customizable to fit my specific needs and budget?">
-                  <p>We pride ourselves on offering flexible renovation solutions tailored to each client's unique requirements and financial considerations. Whether you're looking for a complete overhaul or targeted updates, we work closely with you to create a personalized plan that aligns with your vision and budget constraints. Our goal is to deliver exceptional results that exceed your expectations while staying within your desired investment range.</p>
+                  <p>We pride ourselves on offering flexible renovation solutions tailored to each client&apos;s unique requirements and financial considerations. Whether you&apos;re looking for a complete overhaul or targeted updates, we work closely with you to create a personalized plan that aligns with your vision and budget constraints. Our goal is to deliver exceptional results that exceed your expectations while staying within your desired investment range.</p>
                 </Dropdown>
               </div>
             </div>
