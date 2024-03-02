@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
+import { twMerge } from "tailwind-merge"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useWindowSize } from "@uidotdev/usehooks"
@@ -36,7 +37,7 @@ const MenuItem = ({ link, className = '' }) => {
       <li className="border-b border-neutral-100 lg:border-none relative" onMouseEnter={handleHover} onMouseLeave={handleHover}>
         <div className="flex gap-2">
           <Link
-            className={`py-4 block relative basis-full hover:text-neutral-500 lg:p-0 ${pathname === href ? 'text-neutral-400' : ''} ${className}`}
+            className={twMerge(`py-4 block relative basis-full hover:text-neutral-500 lg:p-0 ${pathname === href ? 'text-neutral-400' : ''} ${className}`)}
             href={href}
           >
             {title}
@@ -57,7 +58,7 @@ const MenuItem = ({ link, className = '' }) => {
   return (
     <li className="border-b border-neutral-100 lg:border-none">
       <Link
-        className={`py-4 block relative hover:text-neutral-500 lg:p-0 ${pathname === href ? 'text-neutral-400' : ''} ${className}`}
+        className={twMerge(`py-4 block relative hover:text-neutral-500 lg:p-0 ${pathname === href ? 'text-neutral-400' : ''} ${className}`)}
         href={href}
       >
         {title}

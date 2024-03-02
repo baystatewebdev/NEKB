@@ -3,6 +3,15 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [{
+          type: 'host',
+          value: 'www.northeastkandb.com'
+        }],
+        destination: 'https://northeastkandb.com/:path*',
+        permanent: true
+      },
+      {
         source: '/our-partners',
         destination: '/partners',
         permanent: true

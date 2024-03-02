@@ -1,14 +1,14 @@
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
 import Image from "next/image"
-import heroImg from 'public/img/hero-img.jpg'
-import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
-import bathroomImg from 'public/img/bathroom-remodel-3.webp'
 import PreHeading from "@/components/PreHeading"
 import { ExternalLink } from "@/components/Link"
 import { Phone, Envelope, MapTrifold } from "@phosphor-icons/react/dist/ssr"
 import ContactForm from "@/components/ContactForm"
+
+import heroImg from 'public/img/northbridge/northbridge-4.webp'
+import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
+import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
 
 export const metadata = {
   title: 'Contact Us'
@@ -31,7 +31,7 @@ const Contact = () => {
             <div>
               <PreHeading>Contact Us</PreHeading>
               <Heading level="h2" className="mb-4">Reach Out To Our Team</Heading>
-              <p className="text-neutral-600 mb-8">For more information, questions, or comments, please call or fill out the form.</p>
+              <p className="text-neutral-600 mb-8">For more information, questions, or to request your <strong>free design</strong>, please call or fill out the form.</p>
               <ul className="flex flex-col gap-12">
                 <li className="flex items-start gap-4">
                   <div className="p-2 inline-block bg-neutral-100 rounded-full">

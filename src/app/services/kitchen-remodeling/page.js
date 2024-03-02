@@ -1,15 +1,20 @@
 import Image from "next/image"
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
-import { CalendarCheck, PencilLine, Swatches } from "@phosphor-icons/react/dist/ssr"
+import { CalendarCheck, PencilLine, Swatches, ArrowCircleRight } from "@phosphor-icons/react/dist/ssr"
 import Cta from "@/components/Cta"
 import PreHeading from "@/components/PreHeading"
 import Dropdown from "@/components/Dropdown"
+import { LinkButton } from "@/components/Button"
+import { InternalLink } from "@/components/Link"
 
 import heroImg from 'public/img/hero-img.jpg'
-import kitchenImg1 from 'public/img/kitchen-remodel-1.jpg'
+import kitchenImg1 from 'public/img/grafton/grafton-10.webp'
 import kitchenImg2 from 'public/img/kitchen-remodel-2.jpg'
-import kitchenImg3 from 'public/img/kitchen-remodel-3.jpg'
+import kitchenImg3 from 'public/img/grafton/grafton-3.webp'
+import kitchenImg4 from 'public/img/grafton/grafton-12.webp'
+import kitchenImg5 from 'public/img/asylum/asylum-1.webp'
+import kitchenImg6 from 'public/img/asylum/asylum-5.webp'
 
 export const metadata = {
   title: 'Kitchen Remodeling'
@@ -32,6 +37,7 @@ const KitchenRemodeling = () => {
             <div className="text-center lg:text-left lg:col-span-2">
               <Heading level="h2" className="mb-4">Full Kitchen Remodels</Heading>
               <p className="mb-4">Our kitchen remodel services are designed to cater to the unique needs of homeowners seeking to revitalize their living spaces. With a keen eye for design and functionality, our experienced team guides clients through every stage of the remodeling process, from initial consultation to final installation. We offer a comprehensive range of services, including design planning, fixture and appliance installation, cabinetry, countertops, flooring, lighting, and more.</p>
+              <InternalLink href="/work" className="inline-flex items-center gap-2 uppercase text-sm group">See Our Work<ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" /></InternalLink>
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">
@@ -73,7 +79,7 @@ const KitchenRemodeling = () => {
               <PreHeading>What We Do</PreHeading>
               <Heading level="h2" className="mb-4">We Do It All</Heading>
               <p className="mb-4">Our dedicated professionals work closely with you to understand your vision and preferences. Whether it&apos;s a single-family home, multi-family residence, or commercial property, our kitchen remodel services are tailored to deliver a stunning transformation. Let us to breathe new life into your kitchen space and increase your home&apos;s value.</p>
-              <ul className="pl-4 columns-2 lg:list-disc">
+              <ul className="pl-4 columns-2 mb-8 lg:list-disc">
                 <li>Islands</li>
                 <li>Shelving</li>
                 <li>Storage</li>
@@ -81,10 +87,11 @@ const KitchenRemodeling = () => {
                 <li>Built-ins</li>
                 <li>And more...</li>
               </ul>
+              <LinkButton href="/contact" className="capitalize">Free Consultation</LinkButton>
             </div>
             <div className="lg:col-span-2">
               <div className="min-h-[35em] relative md:min-h-[39.25em] text-[min(2.959vw,_.745em)] md:text-[min(1.959vw,_1.745em)] lg:text-[min(0.9vw,_0.8em)]">
-                <Image src={kitchenImg2} className="w-[25em] h-[80%] top-0 right-0 absolute object-cover" alt="kitchen" />
+                <Image src={kitchenImg4} className="w-[25em] h-[80%] top-0 right-0 absolute object-cover" alt="kitchen" />
                 <Image src={kitchenImg1} className="w-[25em] h-[45%] bottom-0 left-0 absolute object-cover" alt="kitchen" />
               </div>
             </div>
@@ -96,8 +103,8 @@ const KitchenRemodeling = () => {
           <div className="grid lg:grid-cols-5 items-center gap-24">
             <div className="lg:col-span-2">
               <div className="min-h-[35em] relative md:min-h-[39.25em] text-[min(2.959vw,_.745em)] md:text-[min(1.959vw,_1.745em)] lg:text-[min(0.9vw,_0.8em)]">
-                <Image src={kitchenImg2} className="w-[25em] h-[80%] top-0 left-0 absolute object-cover" alt="kitchen" />
-                <Image src={kitchenImg1} className="w-[25em] h-[45%] bottom-0 right-0 absolute object-cover" alt="kitchen" />
+                <Image src={kitchenImg5} className="w-[25em] h-[80%] top-0 left-0 absolute object-cover" alt="kitchen" />
+                <Image src={kitchenImg6} className="w-[25em] h-[45%] bottom-0 right-0 absolute object-cover" alt="kitchen" />
               </div>
             </div>
             <div className="lg:col-span-3">

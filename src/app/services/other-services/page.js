@@ -7,27 +7,26 @@ import PreHeading from "@/components/PreHeading"
 import Dropdown from "@/components/Dropdown"
 import { LinkButton } from "@/components/Button"
 
-import heroImg from 'public/img/northbridge/northbridge-4.webp'
-import bathroomImg1 from 'public/img/northbridge/northbridge-8.webp'
-import bathroomImg2 from 'public/img/northbridge/northbridge-6.webp'
-import bathroomImg3 from 'public/img/bathroom-remodel-1.webp'
-import bathroomImg4 from 'public/img/ashland-bathroom.jpg'
-import bathroomImg5 from 'public/img/ashland-bathroom-2.jpg'
-import bathroomImg6 from 'public/img/bathroom-remodel-2.webp'
-import bathroomImg7 from 'public/img/bathroom-remodel-3.webp'
+import otherImg1 from 'public/img/grafton/grafton-8.webp'
+import otherImg2 from 'public/img/and-more-2.webp'
+import otherImg3 from 'public/img/ashland-other.jpg'
+import otherImg4 from 'public/img/and-more-1.webp'
+import otherImg5 from 'public/img/and-more-3.webp'
+import otherImg6 from 'public/img/marblehead-other.jpg'
+import otherImg7 from 'public/img/marblehead-other-3.jpg'
 
 export const metadata = {
-  title: 'Bathroom Remodeling'
+  title: 'Other Remodeling & Renovation Services'
 }
 
-const BathroomRemodeling = () => {
+const Page = () => {
   return (
     <main className="text-lg">
-      <Hero bgImage={heroImg} bgOverlay="dark">
+      <Hero bgImage={otherImg1} bgOverlay="dark">
         <div className="container mx-auto">
           <div className="flex flex-col min-h-[50vh] 2xl:min-h-[35vh] items-center justify-center text-center text-white">
-            <Heading className="mb-4">Bathroom Remodeling</Heading>
-            <p className="lg:w-8/12 xl:w-6/12 text-balance">NorthEast offers solutions for bathrooms in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
+            <Heading className="mb-4">Other Remodeling & Renovation Services</Heading>
+            <p className="lg:w-8/12 xl:w-6/12 text-balance">NorthEast offers solutions for a variety of other services in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
           </div>
         </div>
       </Hero>
@@ -35,15 +34,15 @@ const BathroomRemodeling = () => {
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-5 items-center gap-24">
             <div className="text-center lg:text-left lg:col-span-2">
-              <Heading level="h2" className="mb-4">Full Bathroom Remodels</Heading>
-              <p className="mb-4">We excel in delivering bathroom remodel services that elevate your space, mixing luxury and functionality. From start to finish, our team works closely with you to bring your vision to life, offering expertise in space optimization, fixture selection, and quality craftsmanship. Whether it&apos;s a simple upgrade or a complete renovation, we&apos;re dedicated to delivering results that transform your bathroom into a stunning oasis. Choose NorthEast for your remodel needs and experience the difference of our passion and expertise firsthand.</p>
+              <Heading level="h2" className="mb-4">Other Custom Services</Heading>
+              <p className="mb-4">We specialize in providing tailored custom remodel and renovation services to meet the unique needs and preferences of our clients. Whether it's a kitchen renovation to accommodate a growing family, adding built-ins to a living space, or a complete room makeover, our experienced team is dedicated to exceeding expectations at every step of the process. From initial design consultations to the final touches, we collaborate closely with you to ensure that your vision is realized down to the smallest details. With NorthEast, you can trust that your project will be executed flawlessly, creating a house that truly feels like home.</p>
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">
-                <Image src={bathroomImg2} className="lg:mb-8" alt="kitchen" />
-                <Image src={bathroomImg3} className="lg:pl-4" alt="kitchen" />
+                <Image src={otherImg3} className="lg:mb-8" alt="kitchen" />
+                <Image src={otherImg2} className="lg:pl-4" alt="kitchen" />
               </div>
-              <Image src={bathroomImg1} className="col-span-2" alt="modern bathroom vanity remodel" />
+              <Image src={otherImg1} className="col-span-2" alt="kitchen" />
             </div>
           </div>
         </div>
@@ -77,21 +76,21 @@ const BathroomRemodeling = () => {
             <div className="text-center lg:text-left lg:col-span-3">
               <PreHeading>What We Do</PreHeading>
               <Heading level="h2" className="mb-4">We Do It All</Heading>
-              <p className="mb-4">Our experienced team collaborates closely with you to understand your vision and preferences. Whether it&apos;s a residential or commercial property, our bathroom remodeling services are designed to deliver a stunning transformation. Let us revitalize your bathroom space into the room of your dreams and increase the value of your property.</p>
+              <p className="mb-4">Our experienced team collaborates closely with you to understand your needs and tastes. Whether it&apos;s a residential or commercial property, our renovating and remodeling services deliver stunning transformations. Let us help you redesign and redefine your space into the area you&apos;ve been waiting for.</p>
               <ul className="pl-4 columns-2 mb-8 lg:list-disc">
-                <li>Vanities</li>
-                <li>Showers</li>
+                <li>Cabinetry</li>
+                <li>Shelving</li>
                 <li>Storage</li>
-                <li>Fixtures</li>
-                <li>Tile Work</li>
+                <li>Flooring</li>
+                <li>Custom designs</li>
                 <li>Much more...</li>
               </ul>
               <LinkButton href="/contact" className="capitalize">Free Consultation</LinkButton>
             </div>
             <div className="lg:col-span-2">
               <div className="min-h-[35em] relative md:min-h-[39.25em] text-[min(2.959vw,_.745em)] md:text-[min(1.959vw,_1.745em)] lg:text-[min(0.9vw,_0.8em)]">
-                <Image src={bathroomImg5} className="w-[25em] h-[80%] top-0 right-0 absolute object-cover" alt="kitchen" />
-                <Image src={bathroomImg4} className="w-[25em] h-[45%] bottom-0 left-0 absolute object-cover" alt="kitchen" />
+                <Image src={otherImg5} className="w-[25em] h-[80%] top-0 right-0 absolute object-cover" alt="kitchen" />
+                <Image src={otherImg4} className="w-[25em] h-[45%] brightness-125 bottom-0 left-0 absolute object-cover" alt="kitchen" />
               </div>
             </div>
           </div>
@@ -102,22 +101,22 @@ const BathroomRemodeling = () => {
           <div className="grid lg:grid-cols-5 items-center gap-24">
             <div className="lg:col-span-2">
               <div className="min-h-[35em] relative md:min-h-[39.25em] text-[min(2.959vw,_.745em)] md:text-[min(1.959vw,_1.745em)] lg:text-[min(0.9vw,_0.8em)]">
-                <Image src={bathroomImg7} className="w-[25em] h-[80%] top-0 left-0 absolute object-cover" alt="kitchen" />
-                <Image src={bathroomImg6} className="w-[25em] h-[45%] bottom-0 right-0 absolute object-cover" alt="kitchen" />
+                <Image src={otherImg7} className="w-[25em] h-[80%] top-0 left-0 absolute object-cover" alt="kitchen" />
+                <Image src={otherImg6} className="w-[25em] h-[45%] bottom-0 right-0 absolute object-cover" alt="kitchen" />
               </div>
             </div>
             <div className="lg:col-span-3">
               <PreHeading>Still Not Sure?</PreHeading>
               <Heading level="h2" className="mb-8">Frequently Asked Questions</Heading>
               <div className="flex flex-col gap-4">
-                <Dropdown title="How long does the bathroom remodeling process take?">
-                  <p>The timeline for a bathroom remodel can vary depending on the scope of the project. Generally, smaller projects such as updating fixtures or refreshing the paint can be completed in a matter of days to a week. More extensive renovations involving structural changes or complete overhauls may take several weeks to a few months. During our initial consultation, we&apos;ll provide you with a detailed timeline based on your specific project requirements.</p>
+                <Dropdown title="Can you help with the design process of my renovation?">
+                  <p>Absolutely! Our team includes experienced designers who can assist you with every aspect of the design process, from conceptualizing layouts to selecting materials and finishes. We collaborate closely with you to ensure that your vision is realized, creating a customized plan that reflects your style and preferences.</p>
                 </Dropdown>
-                <Dropdown title="What is the typical cost of a bathroom remodel?">
-                  <p>The cost of a bathroom remodel depends on various factors, including the size of the space, the materials used, the extent of the renovation, and any additional features or customizations. We offer personalized quotes based on your individual needs and budget. During the consultation process, we&apos;ll discuss your priorities and provide you with a transparent breakdown of costs to ensure there are no surprises along the way.</p>
+                <Dropdown title="What types of home renovation projects do you specialize in?">
+                  <p>We specialize in a wide range of home renovation projects, including kitchen and bathroom remodels, basement finishing, room additions, and other renovations. Whether you&apos;re looking to update a single area or transform your entire home, our team has the expertise and resources to bring your vision to life.</p>
                 </Dropdown>
-                <Dropdown title="How do I choose the right materials for my kitchen remodel?">
-                  <p>Whether permits are required for your bathroom remodel depends on the scope of the project and local building codes and regulations. In many cases, minor cosmetic updates may not necessitate permits, but major renovations involving structural changes or plumbing/electrical work typically do. As part of our services, we handle all necessary permits and ensure that your remodel complies with local regulations, giving you peace of mind throughout the process.</p>
+                <Dropdown title="Are your renovation services customizable to fit my specific needs and budget?">
+                  <p>We pride ourselves on offering flexible renovation solutions tailored to each client's unique requirements and financial considerations. Whether you're looking for a complete overhaul or targeted updates, we work closely with you to create a personalized plan that aligns with your vision and budget constraints. Our goal is to deliver exceptional results that exceed your expectations while staying within your desired investment range.</p>
                 </Dropdown>
               </div>
             </div>
@@ -133,4 +132,4 @@ const BathroomRemodeling = () => {
   )
 }
 
-export default BathroomRemodeling
+export default Page

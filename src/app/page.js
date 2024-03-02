@@ -8,6 +8,8 @@ import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
 
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenRemodelImg from 'public/img/kitchen-remodel.jpg'
+import kitchenImg2 from 'public/img/kitchen-remodel-2.jpg'
+import bathroomImg2 from 'public/img/northbridge/northbridge-1.webp'
 import bathroomRemodelImg from 'public/img/bathroom-remodel.jpg'
 import andMoreImg from 'public/img/and-more-1.webp'
 import andMoreImg2 from 'public/img/and-more-3.webp'
@@ -131,9 +133,9 @@ export default function Home() {
             <ul className="grid items-center gap-12 text-center md:grid-cols-2 lg:grid-cols-4 lg:text-left">
               <li className="md:col-span-2">
                 <Image
-                  src={bathroomRemodelImg}
+                  src={kitchenImg2}
                   alt="photo of a beautiful and modern remodeled bathroom"
-                  className=""
+                  className="aspect-[3/2] object-cover"
                 />
               </li>
               <li className="flex flex-col gap-4 items-center lg:items-start">
@@ -162,9 +164,9 @@ export default function Home() {
               </li>
               <li className="md:col-span-2">
                 <Image
-                  src={bathroomRemodelImg}
+                  src={bathroomImg2}
                   alt="photo of a beautiful and modern remodeled bathroom"
-                  className=""
+                  className="aspect-[3/2] object-cover"
                 />
               </li>
             </ul>

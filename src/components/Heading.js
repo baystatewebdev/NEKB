@@ -1,4 +1,4 @@
-const Heading = ({ level, levelStyle, className, children }) => {
+const Heading = ({ level = 'h1', levelStyle, className = '', children }) => {
 
   const headingLevels = {
     h1: 'h1',
@@ -26,11 +26,6 @@ const Heading = ({ level, levelStyle, className, children }) => {
   }
 
   return <CustomHeadingElement className={`text-balance ${headingClasses} ${className}`}>{children}</CustomHeadingElement>
-}
-
-Heading.defaultProps = {
-  level: 'h1',
-  className: ''
 }
 
 export default Heading

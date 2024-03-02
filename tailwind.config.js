@@ -13,7 +13,11 @@ module.exports = {
         "gray-gradient-diagnal": "linear-gradient(38deg, #f5f5f5 35%, #fff 27%)"
       },
       colors: {
-        "primary": "#1F5092"
+        "primary": {
+          DEFAULT: "#1F5092",
+          darker: "#173c6d",
+          lighter: "#2867bb"
+        }
       },
       container: {
         padding: {

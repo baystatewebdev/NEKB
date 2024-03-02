@@ -5,15 +5,21 @@ import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
 import Slider from "@/components/Slider"
 import Modal from "@/components/Modal"
+import ModalSlider from "@/components/ModalSlider"
+
+import images from '@/helpers/work'
 
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
 import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
-import kitchenImg3 from 'public/img/asylum/kitchen remodel 1.webp'
+import kitchenImg3 from 'public/img/asylum/asylum-1.webp'
 import bathroomImg1 from 'public/img/bathroom-remodel-1.webp'
 import bathroomImg2 from 'public/img/bathroom-remodel-4.webp'
 import bathroomImg3 from 'public/img/bathroom-remodel-3.webp'
-import ModalSlider from "@/components/ModalSlider"
+import bathroomImg4 from 'public/img/northbridge/northbridge-1.webp'
+import bathroomImg5 from 'public/img/northbridge/northbridge-4.webp'
+import bathroomImg6 from 'public/img/northbridge/northbridge-6.webp'
+
 
 export const metadata = {
   title: 'Our Work'
@@ -62,25 +68,12 @@ const Work = () => {
         <div className="container mx-auto text-center lg:text-left">
           <PreHeading>Our Portfolio</PreHeading>
           <Heading level="h2" className="mb-8">Some of Our Latest Work</Heading>
-          <ul className="grid gap-8 lg:grid-cols-3">
-            <li>
-              <Image src={kitchenImg} className="w-full h-full object-cover" alt="kitchen remodel" />
-            </li>
-            <li>
-              <Image src={kitchenImg2} className="w-full h-full object-cover" alt="kitchen remodel" />
-            </li>
-            <li>
-              <Image src={kitchenImg3} className="w-full h-full object-cover" alt="kitchen remodel" />
-            </li>
-            <li>
-              <Image src={bathroomImg1} className="w-full h-full object-cover" alt="kitchen remodel" />
-            </li>
-            <li>
-              <Image src={bathroomImg2} className="w-full h-full object-cover" alt="kitchen remodel" />
-            </li>
-            <li>
-              <Image src={bathroomImg3} className="w-full h-full object-cover" alt="kitchen remodel" />
-            </li>
+          <ul className="grid gap-8 md:grid-cols-2">
+            {images.map((image, index) => (
+              <li key={index}>
+                <Image src={image.src} className="w-full h-full object-cover" alt={image.alt} />
+              </li>
+            ))}
           </ul>
         </div>
       </section>

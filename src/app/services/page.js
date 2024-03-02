@@ -76,8 +76,8 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">
-                <Image src={moreImg1} className="lg:mb-8" alt="kitchen" />
-                <Image src={moreImg2} className="lg:pl-4" alt="kitchen" />
+                <Image src={moreImg1} className="lg:mb-8 brightness-125" alt="kitchen" />
+                <Image src={moreImg2} className="lg:pl-4 brightness-125" alt="kitchen" />
               </div>
               <Image src={moreImg3} className="col-span-2 max-h-96 lg:max-h-80 object-cover" alt="kitchen" />
             </div>

@@ -1,14 +1,16 @@
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
 import Image from "next/image"
-import heroImg from 'public/img/hero-img.jpg'
-import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
-import bathroomImg from 'public/img/bathroom-remodel-3.webp'
 import PreHeading from "@/components/PreHeading"
 import Card from "@/components/Card"
 import Cta from "@/components/Cta"
-import { InternalLink } from "@/components/Link"
+
+import heroImg from 'public/img/hero-img.jpg'
+import kitchenImg from 'public/img/grafton/grafton-13.webp'
+import kitchenImg2 from 'public/img/grafton/grafton-11.webp'
+import bathroomImg from 'public/img/bathroom-remodel-3.webp'
+import andMoreImg from 'public/img/and-more-1.webp'
+import andMoreImg2 from 'public/img/and-more-3.webp'
 
 export const metadata = {
   title: 'About Us'
@@ -52,7 +54,7 @@ const About = () => {
               <Image
                 src={kitchenImg}
                 alt="photo of a beautiful and modern remodeled bathroom"
-                className="w-24 h-24 object-cover rounded-full"
+                className="w-24 h-24 object-cover flex-none rounded-full"
               />
               <div className="text-center lg:text-left">
                 <Heading level="h3" levelStyle="h5" className="mb-1">Kitchen Remodels</Heading>
@@ -61,9 +63,9 @@ const About = () => {
             </Card>
             <Card type="li">
               <Image
-                src={kitchenImg}
+                src={bathroomImg}
                 alt="photo of a beautiful and modern remodeled bathroom"
-                className="w-24 h-24 object-cover rounded-full"
+                className="w-24 h-24 object-cover flex-none rounded-full"
               />
               <div className="text-center lg:text-left">
                 <Heading level="h3" levelStyle="h5" className="mb-1">Bathroom Remodels</Heading>
@@ -72,9 +74,9 @@ const About = () => {
             </Card>
             <Card type="li">
               <Image
-                src={kitchenImg}
+                src={andMoreImg}
                 alt="photo of a beautiful and modern remodeled bathroom"
-                className="w-24 h-24 object-cover rounded-full"
+                className="w-24 h-24 object-cover flex-none rounded-full brightness-125"
               />
               <div className="text-center lg:text-left">
                 <Heading level="h3" levelStyle="h5" className="mb-1">And More...</Heading>
@@ -83,9 +85,9 @@ const About = () => {
             </Card>
             <Card type="li">
               <Image
-                src={kitchenImg}
+                src={andMoreImg2}
                 alt="photo of a beautiful and modern remodeled bathroom"
-                className="w-24 h-24 object-cover rounded-full"
+                className="w-24 h-24 object-cover flex-none rounded-full brightness-125"
               />
               <div className="text-center lg:text-left">
                 <Heading level="h3" levelStyle="h5" className="mb-1">Thinking of Something Else?</Heading>

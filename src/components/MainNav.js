@@ -5,12 +5,14 @@ import links from "@/helpers/links"
 import { usePathname } from "next/navigation"
 import { useWindowSize } from "@uidotdev/usehooks"
 import MenuItem from "./MenuItem"
-import { FacebookLogo, InstagramLogo, List, X } from "@phosphor-icons/react"
+import { FacebookLogo, InstagramLogo, List, Phone, X } from "@phosphor-icons/react"
+import { LinkButton } from "./Button"
 
 const MainNav = () => {
   const pathname = usePathname()
   const [isNavActive, setIsNavActive] = useState(false)
   const { width } = useWindowSize()
+  const isLandingPage = pathname === '/free-consultation'
 
   // Toggle Nav based on screen size
   useEffect(() => {
@@ -51,25 +53,37 @@ const MainNav = () => {
             }
             <span className="sr-only">Toggle main navigation</span>
           </button>
-          <div id="main-nav" className={`bg-white flex flex-col pl-4 gap-8 absolute top-full right-0 w-10/12 h-dvh lg:gap-16 lg:static lg:h-auto lg:w-auto lg:flex-row ${navMenuClasses}`}>
+          <div id="main-nav" className={`bg-white flex flex-col pl-4 gap-8 absolute top-full right-0 w-10/12 h-dvh lg:items-center lg:gap-16 lg:static lg:h-auto lg:w-auto lg:flex-row ${navMenuClasses}`}>
             <ul className="flex flex-col mt-8 lg:text-sm lg:mt-0 lg:gap-8 lg:flex-row">
               {links.map((link) => (
                 <MenuItem key={link.title} link={link} />
               ))}
             </ul>
             <ul className="flex flex-wrap gap-4">
-              <li>
-                <a href="https://facebook.com" className="text-neutral-400" target="_blank">
-                  <FacebookLogo color="currentColor" size="1.6rem" />
-                  <span className="sr-only">Facebook.com</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com" className="text-neutral-400" target="_blank">
-                  <InstagramLogo color="currentColor" size="1.6rem" />
-                  <span className="sr-only">Instagram.com</span>
-                </a>
-              </li>
+              {isLandingPage
+                ?
+                <li>
+                  <LinkButton href="tel:617-650-8814" className="inline-flex items-center gap-2 capitalize" target="_blank">
+                    <Phone color="currentColor" size="1.6rem" />
+                    Call Now
+                  </LinkButton>
+                </li>
+                :
+                <>
+                  <li>
+                    <a href="https://www.facebook.com/northestkitchenandbath" className="text-neutral-400" target="_blank">
+                      <FacebookLogo color="currentColor" size="1.6rem" />
+                      <span className="sr-only">Facebook.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/northeastkitchenbath/" className="text-neutral-400" target="_blank">
+                      <InstagramLogo color="currentColor" size="1.6rem" />
+                      <span className="sr-only">Instagram.com</span>
+                    </a>
+                  </li>
+                </>
+              }
             </ul>
           </div>
         </nav>
