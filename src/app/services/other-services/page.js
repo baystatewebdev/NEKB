@@ -16,7 +16,8 @@ import otherImg6 from 'public/img/marblehead-other.jpg'
 import otherImg7 from 'public/img/marblehead-other-3.jpg'
 
 export const metadata = {
-  title: 'Other Remodeling & Renovation Services'
+  title: 'Other Remodeling & Renovation Services',
+  description: 'Redefine your space with custom remodeling and renovation services for your Massachusetts home. Get a free consultation with NorthEast today!'
 }
 
 const Page = () => {

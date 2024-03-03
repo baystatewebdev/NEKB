@@ -17,7 +17,8 @@ import kitchenImg5 from 'public/img/asylum/asylum-1.webp'
 import kitchenImg6 from 'public/img/asylum/asylum-5.webp'
 
 export const metadata = {
-  title: 'Kitchen Remodeling'
+  title: 'Kitchen Remodeling',
+  description: 'Elevate your kitchen with NorthEast - expert remodels for a stunning culinary space. Experience superior craftsmanship and a free consultation today!'
 }
 
 const KitchenRemodeling = () => {

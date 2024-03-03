@@ -8,7 +8,8 @@ import partners from "@/helpers/partners"
 import heroImg from 'public/img/hero-img.jpg'
 
 export const metadata = {
-  title: 'Our Partner Brands'
+  title: 'Our Partner Brands',
+  description: 'NorthEast works with some of the best partners. Learn more about who we work with and how we choose only top-notch suppliers to get you the best quality!'
 }
 
 const Partners = () => {

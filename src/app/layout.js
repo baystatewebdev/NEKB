@@ -11,18 +11,14 @@ export const metadata = {
     template: '%s | NorthEast Kitchen / Bath',
     default: 'NorthEast Kitchen / Bath',
   },
-  description: 'The official Next.js Learn Dashboard built with App Router.',
-  metadataBase: new URL('https://northeastkandb.com/'),
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+  description: 'NorthEast provides personalized kitchen, bathroom, and other remodels all over Massachusetts. See how we can customize your home to fit your needs today!',
+  metadataBase: new URL('https://northeastkandb.com/')
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} scroll-smooth`}>
+    <html lang="en" className="scroll-smooth">
+      <body className={inter.className}>
         <header className="relative">
           <MainNav />
         </header>
@@ -31,5 +27,5 @@ export default function RootLayout({ children }) {
       </body>
       {/* <GoogleTagManager gtmId="GTM-XYZ" /> */}
     </html>
-  );
+  )
 }

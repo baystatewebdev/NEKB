@@ -7,7 +7,8 @@ import PreHeading from "@/components/PreHeading"
 import heroImg from 'public/img/northbridge/northbridge-4.webp'
 
 export const metadata = {
-  title: 'Testimonials'
+  title: 'Testimonials',
+  description: 'See what our clients have to say about NorthEast and our exceptional work. We are ready to help you with your next home remodel project today!'
 }
 
 const Testimonials = () => {

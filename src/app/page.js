@@ -1,10 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 import { InternalLink } from "@/components/Link";
 import { LinkButton } from "@/components/Button"
 import Card from "@/components/Card"
-import Cta from "@/components/Cta";
-import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr";
+import Cta from "@/components/Cta"
+import { ArrowCircleRight } from "@phosphor-icons/react/dist/ssr"
+import LocalBusinessSchema from "@/components/LocalBusinessSchema"
 
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenRemodelImg from 'public/img/kitchen-remodel.jpg'
@@ -15,7 +16,8 @@ import andMoreImg from 'public/img/and-more-1.webp'
 import andMoreImg2 from 'public/img/and-more-3.webp'
 
 export const metadata = {
-  title: 'Kitchen & Bath Remodeling Solutions | NorthEast'
+  title: 'Kitchen & Bath Remodeling Solutions | NorthEast',
+  description: 'NorthEast provides personalized kitchen, bathroom, and other remodels all over Massachusetts. See how we can customize your home to fit your needs today!'
 }
 
 export default function Home() {
@@ -178,6 +180,7 @@ export default function Home() {
           <Cta />
         </div>
       </section>
+      <LocalBusinessSchema />
     </main>
   );
 }

@@ -5,6 +5,7 @@ import PreHeading from "@/components/PreHeading"
 import { ExternalLink } from "@/components/Link"
 import { Phone, Envelope, MapTrifold } from "@phosphor-icons/react/dist/ssr"
 import ContactForm from "@/components/ContactForm"
+import LocalBusinessSchema from "@/components/LocalBusinessSchema"
 
 import heroImg from 'public/img/northbridge/northbridge-4.webp'
 import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
@@ -77,6 +78,7 @@ const Contact = () => {
       <section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.6729324533517!2d-71.81679422252404!3d42.26415667120201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e40794963cdb7f%3A0x9ca22c6763835f65!2sNortheast%20Kitchen%20and%20Bathroom!5e0!3m2!1sen!2sus!4v1708464856554!5m2!1sen!2sus" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </section>
+      <LocalBusinessSchema />
     </main >
   )
 }

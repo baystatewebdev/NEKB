@@ -4,6 +4,7 @@ import Image from "next/image"
 import PreHeading from "@/components/PreHeading"
 import Card from "@/components/Card"
 import Cta from "@/components/Cta"
+import LocalBusinessSchema from "@/components/LocalBusinessSchema"
 
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenImg from 'public/img/grafton/grafton-13.webp'
@@ -13,7 +14,8 @@ import andMoreImg from 'public/img/and-more-1.webp'
 import andMoreImg2 from 'public/img/and-more-3.webp'
 
 export const metadata = {
-  title: 'About Us'
+  title: 'About Us',
+  description: 'Learn more about NorthEast and our personalized approach to home renovation projects in Massachusetts. See what we have to offer and how we can help you!'
 }
 
 const About = () => {
@@ -102,6 +104,7 @@ const About = () => {
           <Cta />
         </div>
       </section>
+      <LocalBusinessSchema />
     </main>
   )
 }

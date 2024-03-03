@@ -63,7 +63,7 @@ const MainNav = () => {
               {isLandingPage
                 ?
                 <li>
-                  <LinkButton href="tel:617-650-8814" className="inline-flex items-center gap-2 capitalize" target="_blank">
+                  <LinkButton href="tel:617-650-8814" className="inline-flex items-center gap-2 capitalize" target="">
                     <Phone color="currentColor" size="1.6rem" />
                     Call Now
                   </LinkButton>

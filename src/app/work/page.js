@@ -22,7 +22,8 @@ import bathroomImg6 from 'public/img/northbridge/northbridge-6.webp'
 
 
 export const metadata = {
-  title: 'Our Work'
+  title: 'Our Work',
+  description: 'See some of the amazing kitchen and bathroom remodels we have completed over the past 10+ years in business. Get started with your next project today.'
 }
 
 const Work = () => {

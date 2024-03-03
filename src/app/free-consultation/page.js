@@ -1,12 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import { ExternalLink, InternalLink } from "@/components/Link";
-import Cta from "@/components/Cta";
-import { ArrowCircleRight, Quotes } from "@phosphor-icons/react/dist/ssr";
-import ContactForm from "@/components/ContactForm";
-import PreHeading from "@/components/PreHeading";
-import Heading from "@/components/Heading";
+import Image from "next/image"
+import Link from "next/link"
+import { ExternalLink, InternalLink } from "@/components/Link"
+import Cta from "@/components/Cta"
+import { ArrowCircleRight, Quotes, Phone } from "@phosphor-icons/react/dist/ssr"
+import ContactForm from "@/components/ContactForm"
+import PreHeading from "@/components/PreHeading"
+import Heading from "@/components/Heading"
 import images from "@/helpers/work"
+import { LinkButton } from "@/components/Button"
 
 import kitchenRemodelImg from 'public/img/kitchen-remodel.jpg'
 import kitchenImg2 from 'public/img/kitchen-remodel-2.jpg'
@@ -16,6 +17,7 @@ import bathroomRemodelImg from 'public/img/bathroom-remodel.jpg'
 
 export const metadata = {
   title: 'Free Remodel Design & Consultation',
+  description: 'NorthEast provides personalized kitchen, bathroom, and other remodels all over Massachusetts. See how we can customize your home to fit your needs today!',
   robots: {
     index: false,
     follow: false,
@@ -27,11 +29,11 @@ export default function Page() {
     <main className="text-lg">
       <section className="pt-16 pb-24 bg-gray-gradient-l lg:py-24">
         <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
               <Heading level="h1" levelStyle="h2" className="mb-8">Transform Your Home Today: Free Consultation & Design for Kitchen, Bath, and More!</Heading>
               <p className="mb-8 text-neutral-600 text-balance">Are you looking to remodel your bathroom, kitchen, or another room in your house? Look no further! Northeast offers personalized renovation solutions in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs. Call <ExternalLink href="tel:617-650-8814">617-650-8814</ExternalLink> or fill out the form to get your free consultation and design today!</p>
-              <Image src={graftonImg} alt="remodeled kitchen by northeast" />
+              <Image src={graftonImg} priority alt="remodeled kitchen by northeast" />
             </div>
             <div>
               <div className="shadow-md" id="contact-us">
@@ -197,6 +199,21 @@ export default function Page() {
         <div className="container mx-auto">
           <Cta href="#contact-us" />
         </div>
+      </section>
+      <section className="fixed bottom-0 left-0 w-full z-10 lg:hidden">
+        <ul className="flex divide-x">
+          <li className="basis-1/2 lg:hidden">
+            <LinkButton href="tel:617-650-8814" className="inline-flex items-center justify-center gap-2 capitalize px-2 w-full text-center" target="">
+              <Phone color="currentColor" size="1.6rem" />
+              Call Now
+            </LinkButton>
+          </li>
+          <li className="basis-1/2">
+            <LinkButton href="#contact-us" className="inline-flex items-center justify-center gap-2 capitalize px-2 w-full text-center" target="">
+              Free Consultation
+            </LinkButton>
+          </li>
+        </ul>
       </section>
     </main>
   );

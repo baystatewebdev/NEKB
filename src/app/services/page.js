@@ -16,7 +16,8 @@ import moreImg3 from 'public/img/and-more-3.webp'
 import Cta from "@/components/Cta"
 
 export const metadata = {
-  title: 'Our Services'
+  title: 'Our Services',
+  description: 'NorthEast offers an abundance of home remodel and renovation solutions including bathrooms, kitchens, and more. Reach out today for a free design!'
 }
 
 const Services = () => {
