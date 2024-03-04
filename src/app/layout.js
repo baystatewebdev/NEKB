@@ -12,7 +12,11 @@ export const metadata = {
     default: 'NorthEast Kitchen / Bath',
   },
   description: 'NorthEast provides personalized kitchen, bathroom, and other remodels all over Massachusetts. See how we can customize your home to fit your needs today!',
-  metadataBase: new URL('https://northeastkandb.com/')
+  metadataBase: new URL('https://northeastkandb.com/'),
+  robots: {
+    index: false,
+    follow: false
+  }
 }
 
 export default function RootLayout({ children }) {
