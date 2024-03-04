@@ -66,7 +66,11 @@ export default function Home() {
                 <span className="uppercase text-primary inline-block mb-4">Craft Your Dream Space</span>
                 <h2 className="text-4xl md:text-5xl mb-4">Fully Custom Kitchen Remodels</h2>
                 <p className="text-neutral-600 mb-4">Elevate your home with a kitchen remodel tailored to your style and needs. Our team transforms your vision into reality, crafting a one-of-a-kind space that reflects your personality. With attention to detail and superior craftsmanship, we bring innovation and luxury to every aspect of your kitchen, from bespoke cabinetry to premium finishes.</p>
-                <InternalLink href="/services/kitchen-remodeling" className="inline-flex items-center gap-2 uppercase text-sm group">Learn More <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" /></InternalLink>
+                <InternalLink href="/services/kitchen-remodeling" className="inline-flex items-center gap-2 uppercase text-sm group">
+                  Learn More
+                  <span className="sr-only"> about our kitchen remodels</span>
+                  <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" />
+                </InternalLink>
               </div>
             </div>
           </div>
@@ -79,7 +83,11 @@ export default function Home() {
               <span className="uppercase text-primary inline-block mb-4">Tailored Tranquility</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4">Bespoke Bathroom Renovations</h2>
               <p className="text-neutral-600 mb-4">Indulge in the luxury of a custom bathroom remodel, where your unique vision meets impeccable craftsmanship. From exquisite tile selections to bespoke vanities, we transform your bathroom into a sanctuary tailored to your style and comfort. Discover the art of personalized luxury with our custom bathroom remodel services today.</p>
-              <InternalLink href="/services/bathroom-remodeling" className="inline-flex items-center gap-2 uppercase text-sm group">Learn More <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" /></InternalLink>
+              <InternalLink href="/services/bathroom-remodeling" className="inline-flex items-center gap-2 uppercase text-sm group">
+                Learn More
+                <span className="sr-only"> about our bathroom remodels</span>
+                <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" />
+              </InternalLink>
             </div>
             <div>
               <Image src={bathroomRemodelImg} alt="photo of a beautiful and modern remodeled bathroom" />
@@ -95,7 +103,11 @@ export default function Home() {
                 <span className="uppercase text-primary inline-block mb-4">Our Services</span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 ">Consultations & Services</h2>
                 <p className="text-neutral-600 mb-4">Embark on your renovation journey with confidence and a <InternalLink href="/contact">free consultation</InternalLink>. Whether you&apos;re dreaming of a revitalized kitchen, a serene bathroom retreat, or transforming another space, NorthEast is here to guide you every step of the way.</p>
-                <InternalLink href="/services" className="inline-flex items-center gap-2 uppercase text-sm group">Learn More <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" /></InternalLink>
+                <InternalLink href="/services" className="inline-flex items-center gap-2 uppercase text-sm group">
+                  Learn More
+                  <span className="sr-only"> about our other remodel services</span>
+                  <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" />
+                </InternalLink>
               </div>
               <ul className="flex flex-col gap-8">
                 <Card type="li">
