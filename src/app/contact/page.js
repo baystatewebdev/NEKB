@@ -76,7 +76,15 @@ const Contact = () => {
         </div>
       </section>
       <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.6729324533517!2d-71.81679422252404!3d42.26415667120201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e40794963cdb7f%3A0x9ca22c6763835f65!2sNortheast%20Kitchen%20and%20Bathroom!5e0!3m2!1sen!2sus!4v1708464856554!5m2!1sen!2sus" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.1112413750516!2d-71.7172717!3d42.27614870000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e408548d1cb5f7%3A0x9654b61741e7e6f6!2s516%20Boston%20Turnpike%2C%20Shrewsbury%2C%20MA%2001545!5e0!3m2!1sen!2sus!4v1709578194350!5m2!1sen!2sus"
+          width="100%"
+          height="500"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </section>
       <LocalBusinessSchema />
     </main >
