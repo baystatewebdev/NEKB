@@ -2,6 +2,7 @@ import cubitacLogo from 'public/img/cubitac-logo.webp'
 import diamondLogo from 'public/img/diamond-logo.webp'
 import mantraLogo from 'public/img/mantra-logo.webp'
 import wolfLogo from 'public/img/wolf-logo.webp'
+import fabuwoodLogo from 'public/img/fabuwood-logo.jpg'
 
 const partners = [
   {
@@ -15,6 +16,12 @@ const partners = [
     href: 'https://www.diamondcabinets.com/',
     logo: diamondLogo,
     name: 'Diamond Cabinets'
+  },
+  {
+    description: "With a range of styles, materials and finishes available, Fabuwood offers a multitude of options catering to your specific taste and needs. They make building a luxury kitchen affordable, without compromising on comfort, quality and efficiency.",
+    href: 'https://www.fabuwood.com',
+    logo: fabuwoodLogo,
+    name: 'Fabuwood'
   },
   {
     description: "We believe that in today's fast-paced, budget conscious environment, we need to offer quality products with all the upgrades built-in, reliable service that exceeds expectations, and quick shipping to meet the tightest of deadlines. You can trust us to deliver because we are backed by the largest and most trusted cabinet company in the U.S. – MasterBrand Cabinets®",

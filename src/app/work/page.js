@@ -3,8 +3,6 @@ import Heading from "@/components/Heading"
 import Image from "next/image"
 import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
-import Slider from "@/components/Slider"
-import Modal from "@/components/Modal"
 import ModalSlider from "@/components/ModalSlider"
 
 import images from '@/helpers/work'
@@ -12,14 +10,8 @@ import images from '@/helpers/work'
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
 import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
-import kitchenImg3 from 'public/img/asylum/asylum-1.webp'
 import bathroomImg1 from 'public/img/bathroom-remodel-1.webp'
-import bathroomImg2 from 'public/img/bathroom-remodel-4.webp'
 import bathroomImg3 from 'public/img/bathroom-remodel-3.webp'
-import bathroomImg4 from 'public/img/northbridge/northbridge-1.webp'
-import bathroomImg5 from 'public/img/northbridge/northbridge-4.webp'
-import bathroomImg6 from 'public/img/northbridge/northbridge-6.webp'
-
 
 export const metadata = {
   title: 'Our Work',

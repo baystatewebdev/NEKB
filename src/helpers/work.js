@@ -18,6 +18,16 @@ import northbridgeImg2 from 'public/img/northbridge/northbridge-3.webp'
 import northbridgeImg3 from 'public/img/northbridge/northbridge-6.webp'
 import northbridgeImg4 from 'public/img/northbridge/northbridge-8.webp'
 
+import blackthorne1 from 'public/img/blackthorne/blackthorne-1.webp'
+import blackthorne2 from 'public/img/blackthorne/blackthorne-2.webp'
+import blackthorne3 from 'public/img/blackthorne/blackthorne-4.webp'
+import blackthorne4 from 'public/img/blackthorne/blackthorne-3.webp'
+
+import morse1 from 'public/img/morse/morse-1.webp'
+import morse2 from 'public/img/morse/morse-3.webp'
+import morse3 from 'public/img/morse/morse-6.webp'
+import morse4 from 'public/img/morse/morse-9.webp'
+
 const images = [
   {
     src: asylumImg1,
@@ -81,6 +91,38 @@ const images = [
   },
   {
     src: northbridgeImg4,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: blackthorne1,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: blackthorne2,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: blackthorne3,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: blackthorne4,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: morse1,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: morse2,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: morse3,
+    alt: 'Kitchen Remodel'
+  },
+  {
+    src: morse4,
     alt: 'Kitchen Remodel'
   },
 ]

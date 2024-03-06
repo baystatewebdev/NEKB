@@ -49,7 +49,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <Heading level="h3" className="mb-2">Phone</Heading>
-                    <ExternalLink href="tel:617-650-8814">(617) 650-8814</ExternalLink>
+                    <ExternalLink href="tel:774-420-2211" className="block">(774) 420-2211</ExternalLink>
+                    <ExternalLink href="tel:617-650-8814" className="block">(617) 650-8814</ExternalLink>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
