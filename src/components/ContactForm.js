@@ -158,8 +158,8 @@ const ContactForm = ({ title = '', submitButtonClasses = '', submitButtonText = 
             {...register("project")}
           >
             <option value="" disabled>---</option>
-            <option value="kitchen remdoel">Kitchen Remodel</option>
-            <option value="bathroom remdoel">Bathroom Remodel</option>
+            <option value="kitchen remodel">Kitchen Remodel</option>
+            <option value="bathroom remodel">Bathroom Remodel</option>
             <option value="other project">Other project</option>
           </select>
           {errors.project && (
