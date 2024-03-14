@@ -30,6 +30,11 @@ const nextConfig = {
         source: '/more-services',
         destination: '/services/other-services',
         permanent: true
+      },
+      {
+        source: '/pages-sitemap.xml',
+        destination: '/sitemap.xml',
+        permanent: true
       }
     ]
   }
