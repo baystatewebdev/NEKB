@@ -1,11 +1,12 @@
 import Image from "next/image"
 import Hero from "@/components/Hero"
 import Heading from "@/components/Heading"
-import { CalendarCheck, PencilLine, Swatches } from "@phosphor-icons/react/dist/ssr"
+import { ArrowCircleRight, CalendarCheck, PencilLine, Swatches } from "@phosphor-icons/react/dist/ssr"
 import Cta from "@/components/Cta"
 import PreHeading from "@/components/PreHeading"
 import Dropdown from "@/components/Dropdown"
 import { LinkButton } from "@/components/Button"
+import { InternalLink } from "@/components/Link"
 
 import otherImg1 from 'public/img/grafton/grafton-8.webp'
 import otherImg2 from 'public/img/and-more-2.webp'
@@ -37,6 +38,7 @@ const Page = () => {
             <div className="text-center lg:text-left lg:col-span-2">
               <Heading level="h2" className="mb-4">Other Custom Services</Heading>
               <p className="mb-4">We specialize in providing tailored custom remodel and renovation services to meet the unique needs and preferences of our clients. Whether it&apos;s a kitchen renovation to accommodate a growing family, adding built-ins to a living space, or a complete room makeover, our experienced team is dedicated to exceeding expectations at every step of the process. From initial design consultations to the final touches, we collaborate closely with you to ensure that your vision is realized down to the smallest details. With NorthEast, you can trust that your project will be executed flawlessly, creating a house that truly feels like home.</p>
+              <InternalLink href="/work" className="inline-flex items-center gap-2 uppercase text-sm group">See Our Work<ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" /></InternalLink>
             </div>
             <div className="grid grid-cols-2 items-center lg:grid-cols-3 gap-8 lg:col-span-3">
               <div className="contents lg:block">

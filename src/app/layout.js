@@ -20,6 +20,8 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const env = process.env.NODE_ENV
+
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
@@ -29,7 +31,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
-      {/* <GoogleTagManager gtmId="GTM-XYZ" /> */}
+      {env === 'production' && <GoogleTagManager gtmId="GTM-TTSWCM4" />}
     </html>
   )
 }
