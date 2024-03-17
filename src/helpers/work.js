@@ -35,7 +35,28 @@ import otherImg4 from 'public/img/and-more-1.webp'
 import otherImg5 from 'public/img/and-more-3.webp'
 import otherImg7 from 'public/img/marblehead-other-3.jpg'
 
+import benjamin1 from 'public/img/benjamin/benjamin-1.webp'
+import benjamin2 from 'public/img/benjamin/benjamin-2.webp'
+import benjamin3 from 'public/img/benjamin/benjamin-3.webp'
+import benjamin4 from 'public/img/benjamin/benjamin-4.webp'
+
 const images = [
+  {
+    src: benjamin1,
+    alt: 'Modern kitchen remodel with white cabinets, island, and hexagon tile backsplash.'
+  },
+  {
+    src: benjamin2,
+    alt: 'Updated kitchen with white cabinetry, gold stools, and stylish geometric backsplash.'
+  },
+  {
+    src: benjamin3,
+    alt: 'Bright kitchen renovation featuring a large island, wooden floors, and black accents.'
+  },
+  {
+    src: benjamin4,
+    alt: 'Renovated kitchen with white marble island, open shelves, and pendant lights.'
+  },
   {
     src: asylumImg1,
     alt: 'White kitchen countertop and cabinet in modern style'
