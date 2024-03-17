@@ -3,15 +3,12 @@ import Heading from "@/components/Heading"
 import Image from "next/image"
 import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
-import ModalSlider from "@/components/ModalSlider"
+import Gallery from "@/components/ImageGallery"
 
 import images from '@/helpers/work'
 
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
-import kitchenImg2 from 'public/img/kitchen-remodel.jpg'
-import bathroomImg1 from 'public/img/bathroom-remodel-1.webp'
-import bathroomImg3 from 'public/img/bathroom-remodel-3.webp'
 
 export const metadata = {
   title: 'Our Work',
@@ -47,12 +44,7 @@ const Work = () => {
               <PreHeading>10 Years of Experience</PreHeading>
               <Heading level="h2" className="mb-4">Turn Your Vision Into Reality</Heading>
               <p className="text-neutral-600 mb-8">Our qualified professionals understand what you want, what you are looking for, and plan environments that incorporate all the comfort and elegance your home deserves.</p>
-              <ModalSlider>
-                <Image src={kitchenImg} className="h-full object-contain" alt="kitchen remodel" />
-                <Image src={kitchenImg2} className="h-full object-contain" alt="kitchen remodel" />
-                <Image src={bathroomImg1} className="h-full object-contain" alt="kitchen remodel" />
-                <Image src={bathroomImg3} className="h-full object-contain" alt="kitchen remodel" />
-              </ModalSlider>
+              <Gallery />
             </div>
           </div>
         </div>

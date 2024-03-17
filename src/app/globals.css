@@ -24,3 +24,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (width >= 1024px) {
+  .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-right-nav .image-gallery-svg {
+    width: 30px !important;
+    height: 60px !important;
+  }
+}
