@@ -27,6 +27,11 @@ const nextConfig = {
         permanent: true
       },
       {
+        source: '/bathrooms',
+        destination: '/services/bathroom-remodeling',
+        permanent: true
+      },
+      {
         source: '/more-services',
         destination: '/services/other-services',
         permanent: true
