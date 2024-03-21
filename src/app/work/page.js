@@ -5,10 +5,9 @@ import PreHeading from "@/components/PreHeading"
 import { LinkButton } from "@/components/Button"
 import Gallery from "@/components/ImageGallery"
 
-import images from '@/helpers/work'
-
 import heroImg from 'public/img/hero-img.jpg'
 import kitchenImg from 'public/img/kitchen-remodel-1.jpg'
+import WorkGallery from "@/components/WorkGallery"
 
 export const metadata = {
   title: 'Our Work',
@@ -53,13 +52,7 @@ const Work = () => {
         <div className="container mx-auto text-center lg:text-left">
           <PreHeading>Our Portfolio</PreHeading>
           <Heading level="h2" className="mb-8">Some of Our Latest Work</Heading>
-          <ul className="grid gap-8 md:grid-cols-2">
-            {images.map((image, index) => (
-              <li key={index}>
-                <Image src={image.src} className="w-full h-full object-cover" alt={image.alt} />
-              </li>
-            ))}
-          </ul>
+          <WorkGallery />
         </div>
       </section>
       <section className="py-24">
