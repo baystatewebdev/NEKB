@@ -16,19 +16,19 @@ import andMoreImg from 'public/img/and-more-1.webp'
 import andMoreImg2 from 'public/img/and-more-3.webp'
 
 export const metadata = {
-  title: 'Kitchen & Bath Remodeling Solutions | NorthEast',
+  title: 'Massachusetts Kitchen & Bathroom Remodeling | NorthEast',
   description: 'NorthEast provides personalized kitchen, bathroom, and other remodels all over Massachusetts. See how we can customize your home to fit your needs today!'
 }
 
 export default function Home() {
   return (
     <main className="text-lg">
-      <section className="pt-16 pb-24 bg-gray-gradient-l lg:py-32">
+      <section className="pt-16 pb-24 bg-gray-gradient-l lg:py-24">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
               <h1 className="text-5xl md:text-6xl lg:text-7xl mb-8 text-balence">Premier Kitchen & Bathroom Remodeling Solutions</h1>
-              <p className="mb-8 text-neutral-600 text-balance">NORTHEAST offers solutions for kitchens and bathrooms in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
+              <p className="mb-8 text-neutral-600 text-balance">NorthEast offers solutions for kitchens and bathrooms in a planned, functional way, with good taste and sophistication, using high-quality materials, technology, and exclusive designs.</p>
               <LinkButton href="/contact">Get Started</LinkButton>
             </div>
             <div className="flex flex-col justify-center">

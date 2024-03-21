@@ -18,7 +18,7 @@ import bathroomImg6 from 'public/img/bathroom-remodel-2.webp'
 import bathroomImg7 from 'public/img/bathroom-remodel-3.webp'
 
 export const metadata = {
-  title: 'Bathroom Remodeling',
+  title: 'Massachusetts Bathroom Remodeling',
   description: 'Elevate your bathroom with NorthEast - expert remodels for a stunning oasis. Experience superior craftsmanship and a free consultation today!'
 }
 
