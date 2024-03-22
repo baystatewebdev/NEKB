@@ -3,7 +3,7 @@ import { CaretDown } from "@phosphor-icons/react/dist/ssr"
 const Dropdown = ({ title = '', children }) => {
   return (
     <details className="group border border-black">
-      <summary className="list-none flex justify-between font-medium p-4 bg-neutral-100 cursor-pointer">
+      <summary className="list-none flex justify-between font-medium p-4 bg-neutral-100 cursor-pointer select-none">
         {title}
         <CaretDown size="2rem" className="ml-4 shrink-0 transition-transform group-open:rotate-180" />
       </summary>

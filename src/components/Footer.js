@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ExternalLink } from '@/components/Link'
 import links from "@/helpers/links"
+import { primaryPhoneNumber, secondaryPhoneNumber } from "@/helpers/constants"
 
 const Footer = () => {
   return (
@@ -14,8 +15,8 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="text-xl mb-1">Phone</h3>
-              <ExternalLink href="tel:774-420-2211" className="block">(774) 420-2211</ExternalLink>
-              <ExternalLink href="tel:617-650-8814" className="block">(617) 650-8814</ExternalLink>
+              <ExternalLink href={`tel:${primaryPhoneNumber}`} className="block">{primaryPhoneNumber}</ExternalLink>
+              <ExternalLink href={`tel:${secondaryPhoneNumber}`} className="block">{secondaryPhoneNumber}</ExternalLink>
             </div>
             <div>
               <h3 className="text-xl mb-1">Location</h3>

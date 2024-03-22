@@ -11,6 +11,7 @@ export default function sitemap() {
     '/services/other-services',
     '/testimonials',
     '/work',
+    '/massachusetts/shrewsbury'
   ]
 
   return routes.map((route) => {
