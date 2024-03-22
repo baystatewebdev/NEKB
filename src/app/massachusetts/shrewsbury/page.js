@@ -72,7 +72,7 @@ const Page = () => {
             </div>
             <div>
               <Heading level="h2" className="mb-4">Shrewsbury Kitchen Renovation Services</Heading>
-              <p>At NorthEast, our kitchen renovation services stand out for their personalized design, high-quality materials, and exceptional craftsmanship. We understand that the kitchen is the heart of the home, where families come together to cook, dine, and share moments. That's why our approach starts with understanding your vision and needs. Whether you're looking for a modern, sleek kitchen with smart appliances and space-saving solutions or a traditional design that exudes warmth and comfort, we have the expertise to bring your dream kitchen to life.</p>
+              <p>At NorthEast, our kitchen renovation services stand out for their personalized design, high-quality materials, and exceptional craftsmanship. We understand that the kitchen is the heart of the home, where families come together to cook, dine, and share moments. That&apos;s why our approach starts with understanding your vision and needs. Whether you&apos;re looking for a modern, sleek kitchen with smart appliances and space-saving solutions or a traditional design that exudes warmth and comfort, we have the expertise to bring your dream kitchen to life.</p>
               <InternalLink href="/contact" className="inline-flex items-center gap-2 uppercase text-sm group">
                 Get Started
                 <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" />
@@ -85,7 +85,7 @@ const Page = () => {
             </div>
             <div>
               <Heading level="h2" className="mb-4">Bathroom Design Services in Shrewsbury</Heading>
-              <p className="mb-4">The bathroom, a private sanctuary for relaxation and rejuvenation, demands a design that reflects tranquility and practicality. NorthEast's bathroom renovation services in Shrewsbury prioritize creating a space that aligns with your personal style while ensuring comfort and convenience. Whether you envision a luxurious spa-like bathroom with a freestanding tub and rainfall showerhead or a compact, efficiently designed space, our team is skilled at executing your vision with precision and care.</p>
+              <p className="mb-4">The bathroom, a private sanctuary for relaxation and rejuvenation, demands a design that reflects tranquility and practicality. NorthEast&apos;s bathroom renovation services in Shrewsbury prioritize creating a space that aligns with your personal style while ensuring comfort and convenience. Whether you envision a luxurious spa-like bathroom with a freestanding tub and rainfall showerhead or a compact, efficiently designed space, our team is skilled at executing your vision with precision and care.</p>
               <InternalLink href="/contact" className="inline-flex items-center gap-2 uppercase text-sm group">
                 Get Started
                 <ArrowCircleRight className="relative group-hover:translate-x-2 transition-transform" size="1.25em" />
