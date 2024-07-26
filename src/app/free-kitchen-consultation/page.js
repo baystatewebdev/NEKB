@@ -352,7 +352,7 @@ export default function Page() {
 							</h3>
 							<p>
 								Begin the construction process, while maintaining open
-								communication with the throughout the renovation. 
+								communication throughout the renovation. 
 							</p>
 							<Link
 								href="#contact-us"
