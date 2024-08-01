@@ -43,15 +43,15 @@ export default function Page() {
 					<div className="grid items-center gap-12 lg:grid-cols-2">
 						<div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
 							<Heading level="h1" levelStyle="h2" className="mb-8">
-								Free Kitchen Remodel Consultation & Design - Transform Your Home
-								Today!
+								Custom Kitchen Remodeling Services -{" "}
+								<small>Transform Your Home Today!</small>
 							</Heading>
 							<p className="mb-8 text-neutral-600 text-balance">
 								Are you looking to remodel your kitchen with an updated design
 								or functionality? Look no further! Northeast offers personalized
-								renovation solutions in a planned, functional way, with good
-								taste and sophistication, using high-quality materials,
-								technology, and exclusive designs. Call{" "}
+								and luxurious renovation solutions in a planned, functional way,
+								using high-quality materials, technology, and exclusive designs.
+								Call{" "}
 								<ExternalLink href="tel:617-650-8814">
 									617-650-8814
 								</ExternalLink>{" "}
