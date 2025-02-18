@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import useWeb3Forms from "@web3forms/react";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { CircleNotch } from "@phosphor-icons/react";
 import Heading from "./Heading";
 import { twMerge } from "tailwind-merge";
 import { sendGTMEvent } from "@next/third-parties/google";
 import { usePathname } from "next/navigation";
+import { submitForm } from "@/actions/mail";
 
 const ContactForm = ({
 	title = "",
@@ -20,45 +20,48 @@ const ContactForm = ({
 		handleSubmit,
 		reset,
 		setValue,
+		setError,
 		formState: { errors, isSubmitSuccessful, isSubmitting },
 	} = useForm({
 		mode: "onTouched",
+		defaultValues: {
+			"h-captcha-response": "",
+		},
 	});
+
+	// Register the captcha field with validation
+	register("h-captcha-response", {
+		required: "Please complete the captcha",
+	});
+
 	const [isSuccess, setIsSuccess] = useState(false);
-	// const [message, setMessage] = useState(false)
 
 	const onHCaptchaChange = (token) => {
 		setValue("h-captcha-response", token);
 	};
 
-	const { submit: onSubmit } = useWeb3Forms({
-		access_key: process.env.NEXT_PUBLIC_ACCESS_KEY,
-		settings: {
-			from_name: "NorthEast K&B",
-			subject: "New Contact Form Message from your Website",
-		},
-		onSuccess: (msg, data) => {
-			setIsSuccess(true);
+	const handleOnSubmit = async (formData) => {
+		const response = await submitForm(formData);
+
+		setIsSuccess(response.success);
+		if (response.success) {
 			sendGTMEvent({
 				event: "formSubmission",
 				pagePath: path,
 				pageTitle: document.title,
 				formStatus: "success",
-				formMessage: msg,
 			});
 			reset();
-		},
-		onError: (msg, data) => {
-			setIsSuccess(false);
+		} else {
+			setError("form", { type: "manual", message: response.message });
 			sendGTMEvent({
 				event: "formSubmission",
 				pagePath: path,
 				pageTitle: document.title,
 				formStatus: "failed",
-				formMessage: msg,
 			});
-		},
-	});
+		}
+	};
 
 	return (
 		<div className="p-8 bg-white">
@@ -67,12 +70,19 @@ const ContactForm = ({
 					{title}
 				</Heading>
 			)}
-			<form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
+			<form
+				onSubmit={handleSubmit(handleOnSubmit)}
+				className="flex flex-col gap-4"
+			>
+				<label htmlFor="formCheck" className="sr-only">
+					Please leave this field alone.
+				</label>
 				<input
 					type="checkbox"
-					id=""
+					id="formCheck"
+					name="formCheck"
 					className="hidden"
-					{...register("botcheck")}
+					{...register("formCheck")}
 				/>
 
 				<div className="">
@@ -218,10 +228,14 @@ const ContactForm = ({
 				</div>
 
 				<HCaptcha
-					sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
-					reCaptchaCompat={false}
-					onVerify={onHCaptchaChange}
+					sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_KEY}
+					onVerify={(token, ekey) => onHCaptchaChange(token)}
 				/>
+				{errors["h-captcha-response"] && (
+					<div className="mt-1 text-red-600">
+						<small>{errors["h-captcha-response"].message}</small>
+					</div>
+				)}
 
 				<button
 					type="submit"
@@ -245,7 +259,9 @@ const ContactForm = ({
 			)}
 			{isSubmitSuccessful && !isSuccess && (
 				<div className="my-4 text-sm text-center border p-4 border-red-600 text-red-600">
-					Something went wrong. Please try again later.
+					{errors.form
+						? errors.form.message
+						: "Something went wrong. Please try again later."}
 				</div>
 			)}
 		</div>
