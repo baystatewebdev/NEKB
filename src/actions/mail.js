@@ -40,7 +40,7 @@ export async function submitForm(formData) {
 	if (honeyPot) {
 		return {
 			success: false,
-			message: "Something went wrong, please try again later. [Honeypot]",
+			message: "Something went wrong, please try again later.",
 		};
 	}
 
