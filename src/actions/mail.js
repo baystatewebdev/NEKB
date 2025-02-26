@@ -61,21 +61,18 @@ export async function submitForm(formData) {
 			};
 		}
 
-		const emailResponse = await mg.messages.create(
-			"sandboxf6ff3720be294215adc49a014463e205.mailgun.org",
-			{
-				from: "Mailgun Sandbox <postmaster@sandboxf6ff3720be294215adc49a014463e205.mailgun.org>",
-				to: ["kevinrkowalski@gmail.com"],
-				subject: "New Form Submission",
-				text: `
+		const emailResponse = await mg.messages.create(process.env.MAILGUN_DOMAIN, {
+			from: `NEKB <postmaster@${process.env.MAILGUN_DOMAIN}>`,
+			to: ["kevinrkowalski@gmail.com"],
+			subject: "New Website Form Submission",
+			text: `
 				Name: ${name}
 				Email: ${email}
 				Phone: ${phone}
 				Project: ${project}
 				Message: ${message}
 			`,
-			}
-		);
+		});
 
 		// Check the status of the email response
 		if (emailResponse.status !== 200) {
