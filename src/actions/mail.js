@@ -63,7 +63,7 @@ export async function submitForm(formData) {
 
 		const emailResponse = await mg.messages.create(process.env.MAILGUN_DOMAIN, {
 			from: `NEKB <postmaster@${process.env.MAILGUN_DOMAIN}>`,
-			to: ["kevinrkowalski@gmail.com"],
+			to: ["thais@northeastkitchenbath.com"],
 			subject: "New Website Form Submission",
 			text: `
 				Name: ${name}
