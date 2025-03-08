@@ -2,11 +2,17 @@
 
 import FormData from "form-data";
 import Mailgun from "mailgun.js";
+import twilio from "twilio";
+
 const mailgun = new Mailgun(FormData);
 const mg = mailgun.client({
 	username: "api",
 	key: process.env.MAILGUN_API_KEY,
 });
+
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = twilio(accountSid, authToken);
 
 async function verifyCaptcha(hcaptcha) {
 	const data = new URLSearchParams();
@@ -24,6 +30,29 @@ async function verifyCaptcha(hcaptcha) {
 
 	const responseData = await response.json();
 	return responseData;
+}
+
+async function verifyPhoneWithTwilio(number) {
+	try {
+		const phoneNumber = await client.lookups.v2
+			.phoneNumbers(number)
+			.fetch({ fields: ["line_type_intelligence"] });
+
+		const goodLineTypes = ["mobile", "landline"];
+
+		if (
+			!phoneNumber.valid ||
+			!goodLineTypes.includes(phoneNumber?.lineTypeIntelligence?.type)
+		) {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// There was an error verifying the phone number but let's assume it's valid
+		console.log("error verifying phone number with twilio");
+		return true;
+	}
 }
 
 export async function submitForm(formData) {
@@ -58,6 +87,15 @@ export async function submitForm(formData) {
 			return {
 				success: false,
 				message: "Captcha verification failed. Please try again.",
+			};
+		}
+
+		const isValidPhoneNumber = await verifyPhoneWithTwilio(phone);
+
+		if (!isValidPhoneNumber) {
+			return {
+				success: false,
+				message: "Invalid phone number. Please try again.",
 			};
 		}
 
