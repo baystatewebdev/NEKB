@@ -165,8 +165,9 @@ const ContactForm = ({
             {...register("phone", {
               required: "Please enter your phone number",
               pattern: {
-                value: /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/,
-                message: "Please enter a valid phone number",
+              value: /^(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/,
+              message: "Please enter a valid US phone number",
+                },
               },
             })}
           />
