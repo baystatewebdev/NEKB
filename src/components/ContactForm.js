@@ -77,16 +77,21 @@ const ContactForm = ({
         onSubmit={handleSubmit(handleOnSubmit)}
         className="flex flex-col gap-4"
       >
-        <label htmlFor="formCheck" className="sr-only">
-          Please leave this field alone.
-        </label>
-        <input
-          type="checkbox"
-          id="formCheck"
-          name="formCheck"
-          className="hidden"
-          {...register("formCheck")}
-        />
+        
+        
+        {/* Honeypot */}
+      <label htmlFor="formCheck" className="sr-only">
+        Please leave this field alone.
+      </label>
+      <input
+        type="checkbox"
+        id="formCheck"
+        name="formCheck"
+        className="absolute left-[-9999px]"
+        tabIndex="-1"
+        autoComplete="off"
+      {...register("formCheck")}
+      />
 
         <div className="">
           <label htmlFor="name" className="block">
@@ -165,11 +170,11 @@ const ContactForm = ({
             {...register("phone", {
               required: "Please enter your phone number",
               pattern: {
-              value: /^(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/,
-              message: "Please enter a valid US phone number",
-                },
-              },
+                value: /^(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/,
+                message: "Please enter a valid US phone number"
+          }
             })}
+
           />
           {errors.phone && (
             <div className="mt-1 text-red-600">
