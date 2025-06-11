@@ -37,10 +37,12 @@ const ContactForm = ({
   const [isSuccess, setIsSuccess] = useState(false);
 
   const onHCaptchaChange = (token) => {
+      console.log("Token hCaptcha:", token);
     setValue("h-captcha-response", token);
   };
 
   const handleOnSubmit = async (formData) => {
+     console.log("Form Data:", formData);
     const response = await submitForm(formData);
     setIsSuccess(response.success);
     if (response.success) {
